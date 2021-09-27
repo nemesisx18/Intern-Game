@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float playerSpeed = 5.0f;
+    public float playerSpeed = 5.0f;
 
     private Rigidbody2D _playerRigidbody;
+
     private void Start()
     {
         _playerRigidbody = GetComponent<Rigidbody2D>();
@@ -15,7 +16,7 @@ public class PlayerController : MonoBehaviour
             Debug.LogError("Player is missing a Rigidbody2D component");
         }
     }
-    private void Update()
+    void Update()
     {
         MovePlayer();
     }
@@ -26,17 +27,25 @@ public class PlayerController : MonoBehaviour
         _playerRigidbody.velocity = new Vector2(horizontalInput * playerSpeed, verticalInput * playerSpeed);
     }
 
-    private bool IsGrounded()
+    public IEnumerator Slowed()
     {
-        var groundCheck = Physics2D.Raycast(transform.position, Vector2.down, 0.7f);
-        return groundCheck.collider != null && groundCheck.collider.CompareTag("Ground");
+        playerSpeed = 2f;
+        yield return new WaitForSeconds(1f);
+        playerSpeed = 5f;
     }
+
+    //private bool IsGrounded()
+    //{
+    //    var groundCheck = Physics2D.Raycast(transform.position, Vector2.down, 0.7f);
+    //    return groundCheck.collider != null && groundCheck.collider.CompareTag("Ground");
+    //}
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Puzzle")
         {
             //do something
+            Debug.Log("menginjak spike");
         }
     }
 }

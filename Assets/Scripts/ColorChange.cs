@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class ColorChange : MonoBehaviour
 {
-    SpriteRenderer sprite;
+    public SpriteRenderer spriteRenderer;
+    public Sprite[] randomButton;
 
     void Start()
     {
-        sprite = GetComponent<SpriteRenderer>();
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+    }
+
+    public void RandomButton()
+    {
+        spriteRenderer.sprite = randomButton[Random.Range(0, randomButton.Length)];
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -16,15 +22,7 @@ public class ColorChange : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log("Player menyentuh");
-            sprite.color = new Color(1, 0, 0, 1);
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            sprite.color = new Color(255, 255, 255);
+            RandomButton();
         }
     }
 }

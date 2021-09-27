@@ -7,8 +7,8 @@ public class GameManager : MonoBehaviour
     public GameObject[] trap;
     
     float elapsedTime = 0f; // Counts up to repeatTime
-    float repeatTime = 2f; // Time taken to repeat in seconds
-    
+    float repeatTime = 4f; // Time taken to repeat in seconds
+
     private int currentIndex = 0;
     
     // Start is called before the first frame update
