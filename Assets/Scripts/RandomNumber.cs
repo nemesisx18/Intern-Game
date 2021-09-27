@@ -12,6 +12,8 @@ public class RandomNumber : MonoBehaviour
     public TextMeshProUGUI txt_hasil;
     public TMP_InputField txt_input;
 
+    public Button_0 button;
+
     double angka1, angka2, angka3 ,aritmatika;
 
     public double hasil, inputJawaban;

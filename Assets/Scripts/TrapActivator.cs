@@ -19,7 +19,6 @@ public class TrapActivator : MonoBehaviour
     IEnumerator DelaySpike()
     {
         yield return new WaitForSecondsRealtime(2.5f);
-        Debug.Log("slow");
         SlowPlayer();
     }
 

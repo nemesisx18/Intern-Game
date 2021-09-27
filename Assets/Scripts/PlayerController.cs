@@ -1,12 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
     public float playerSpeed = 5.0f;
+    public bool canPress = false;
 
     private Rigidbody2D _playerRigidbody;
+
+    public Button_0 button;
+    [SerializeField] TMP_InputField inputField;
+
+    string InputString;
 
     private void Start()
     {
