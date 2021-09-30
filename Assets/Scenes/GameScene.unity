@@ -11869,6 +11869,47 @@ MonoBehaviour:
   - {fileID: 776819772}
   - {fileID: 2021201494}
   - {fileID: 828899716}
+  - {fileID: 31621214}
+  - {fileID: 1712314489}
+  - {fileID: 1649615148}
+  - {fileID: 613268989}
+  - {fileID: 1228170238}
+  - {fileID: 1394917880}
+  - {fileID: 2005939713}
+  - {fileID: 954601031}
+  - {fileID: 1684546896}
+  - {fileID: 1615595795}
+  - {fileID: 1774033970}
+  - {fileID: 822932326}
+  - {fileID: 574086402}
+  - {fileID: 1099987818}
+  trap2:
+  - {fileID: 1768603718}
+  - {fileID: 678231089}
+  - {fileID: 2058173760}
+  - {fileID: 1400325228}
+  - {fileID: 1887381487}
+  - {fileID: 1136372633}
+  - {fileID: 1169921171}
+  - {fileID: 780234377}
+  - {fileID: 1966941339}
+  - {fileID: 776819772}
+  - {fileID: 2021201494}
+  - {fileID: 828899716}
+  - {fileID: 31621214}
+  - {fileID: 1712314489}
+  - {fileID: 1649615148}
+  - {fileID: 613268989}
+  - {fileID: 1228170238}
+  - {fileID: 1394917880}
+  - {fileID: 2005939713}
+  - {fileID: 954601031}
+  - {fileID: 1684546896}
+  - {fileID: 1615595795}
+  - {fileID: 1774033970}
+  - {fileID: 822932326}
+  - {fileID: 574086402}
+  - {fileID: 1099987818}
 --- !u!4 &1912289618
 Transform:
   m_ObjectHideFlags: 0
