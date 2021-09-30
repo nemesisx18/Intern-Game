@@ -5456,6 +5456,32 @@ MonoBehaviour:
   gmTimer: {fileID: 1912289619}
   hasil: 0
   inputJawaban: 0
+  soal_angka1:
+  - 10
+  - 10
+  - 10
+  - 8
+  - 8
+  - 8
+  - 6
+  - 6
+  - 6
+  - 4
+  - 4
+  - 2
+  soal_angka2:
+  - 2
+  - 5
+  - 10
+  - 2
+  - 4
+  - 8
+  - 2
+  - 3
+  - 6
+  - 2
+  - 4
+  - 2
 --- !u!4 &994082083
 Transform:
   m_ObjectHideFlags: 0
@@ -11919,6 +11945,7 @@ MonoBehaviour:
   - {fileID: 822932326}
   - {fileID: 574086402}
   - {fileID: 1099987818}
+  trap3: []
 --- !u!4 &1912289618
 Transform:
   m_ObjectHideFlags: 0

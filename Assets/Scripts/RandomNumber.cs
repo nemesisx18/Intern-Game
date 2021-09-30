@@ -18,83 +18,32 @@ public class RandomNumber : MonoBehaviour
     double angka1, angka2, angka3 ,aritmatika;
 
     public double hasil, inputJawaban;
-    
+
+    public double[] soal_angka1;
+    public double[] soal_angka2;
+
 
     private void Start()
     {
-        angka1 = Random.Range(0, 10);
-        angka2 = Random.Range(1, 10);
-        aritmatika = Random.Range(0, 4);
-
-        if (aritmatika == 0)
-        {
-            txt_aritmatika.text = " + ";
-            hasil = angka1 + angka2;
-        }
-        else if (aritmatika == 1)
-        {
-            txt_aritmatika.text = " - ";
-            hasil = angka1 - angka2;
-        }
-        else if (aritmatika == 2)
-        {
-            txt_aritmatika.text = " * ";
-            hasil = angka1 * angka2;
-        }
-        else if (aritmatika == 3)
-        {
-            txt_aritmatika.text = " / ";
-            double a, b;
-            a = angka1;
-            b = angka2;
-            hasil = a / b;
-        }
-
-        txt_angka1.text = angka1.ToString();
-        txt_angka2.text = angka2.ToString();
-        txt_hasil.text = hasil.ToString("0.##");
+        RandomNumberAll();
     }
 
     private void Update()
     {
         inputJawaban = System.Convert.ToDouble(button.InputString);
         txt_input.text = inputJawaban.ToString();
-
-        AutoCekjawaban();
+        if (inputJawaban != null)
+        {
+            AutoCekjawaban();
+        }
+        
     }
 
     public void AutoCekjawaban()
     {
         if (inputJawaban == hasil)
         {
-            angka1 = Random.Range(0, 10);
-            angka2 = Random.Range(0, 10);
-            aritmatika = Random.Range(0, 4);
-
-            if (aritmatika == 0)
-            {
-                txt_aritmatika.text = " + ";
-                hasil = angka1 + angka2;
-            }
-            else if (aritmatika == 1)
-            {
-                txt_aritmatika.text = " - ";
-                hasil = angka1 - angka2;
-            }
-            else if (aritmatika == 2)
-            {
-                txt_aritmatika.text = " * ";
-                hasil = angka1 * angka2;
-            }
-            else if (aritmatika == 3)
-            {
-                txt_aritmatika.text = " / ";
-                hasil = angka1 / angka2;
-            }
-
-            txt_angka1.text = angka1.ToString();
-            txt_angka2.text = angka2.ToString();
-            txt_hasil.text = hasil.ToString("0.##");
+            RandomNumberAll();
 
             button.InputString = "";
             gmTimer.timeRemaining += 5f;
@@ -111,34 +60,7 @@ public class RandomNumber : MonoBehaviour
     {
         if (inputJawaban == hasil)
         {
-            angka1 = Random.Range(0, 10);
-            angka2 = Random.Range(0, 10);
-            aritmatika = Random.Range(0, 4);
-
-            if (aritmatika == 0)
-            {
-                txt_aritmatika.text = " + ";
-                hasil = angka1 + angka2;
-            }
-            else if (aritmatika == 1)
-            {
-                txt_aritmatika.text = " - ";
-                hasil = angka1 - angka2;
-            }
-            else if (aritmatika == 2)
-            {
-                txt_aritmatika.text = " * ";
-                hasil = angka1 * angka2;
-            }
-            else if (aritmatika == 3)
-            {
-                txt_aritmatika.text = " / ";
-                hasil = angka1 / angka2;
-            }
-
-            txt_angka1.text = angka1.ToString();
-            txt_angka2.text = angka2.ToString();
-            txt_hasil.text = hasil.ToString("0.##");
+            RandomNumberAll();
 
             button.InputString = "";
         }
@@ -150,28 +72,43 @@ public class RandomNumber : MonoBehaviour
 
     public void RandomNumberAll()
     {
-        angka1 = Random.Range(0, 10);
-        angka2 = Random.Range(0, 10);
+        
         aritmatika = Random.Range(0, 4);
 
+        //ARITMATIKA PENJUMLAHAN (+)
         if (aritmatika == 0)
         {
+            angka1 = Random.Range(0, 51);
+            angka2 = Random.Range(0, 51);
             txt_aritmatika.text = " + ";
             hasil = angka1 + angka2;
         }
+
+        //ARITMATIKA PENGURANGAN (-)
         else if (aritmatika == 1)
         {
+            angka1 = Random.Range(0, 51);
+            angka2 = Random.Range(0, 51);
             txt_aritmatika.text = " - ";
             hasil = angka1 - angka2;
         }
+
+        //ARITMATIKA PERKALIAN (*)
         else if (aritmatika == 2)
         {
-            txt_aritmatika.text = " * ";
+            angka1 = Random.Range(0, 11);
+            angka2 = Random.Range(0, 11);
+            txt_aritmatika.text = " X ";
             hasil = angka1 * angka2;
         }
+
+        //ARITMATIKA PEMBAGIAN (:)
         else if (aritmatika == 3)
         {
-            txt_aritmatika.text = " / ";
+            int element = Random.Range(0,soal_angka1.Length);
+            angka1 = soal_angka1[element];
+            angka2 = soal_angka2[element];
+            txt_aritmatika.text = " : ";
             hasil = angka1 / angka2;
             
         }
