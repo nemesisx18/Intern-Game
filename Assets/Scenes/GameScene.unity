@@ -726,7 +726,6 @@ GameObject:
   - component: {fileID: 140785744}
   - component: {fileID: 140785746}
   - component: {fileID: 140785745}
-  - component: {fileID: 140785747}
   m_Layer: 0
   m_Name: Button 7
   m_TagString: Nomor
@@ -755,7 +754,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140785742}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -811,12 +810,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  randomButton:
-  - {fileID: 21300000, guid: c9695eca13085d94c9a2b7e88a7e1d1a, type: 3}
-  - {fileID: 21300000, guid: 2f5335fe132b2f946b74b0ce1c796d87, type: 3}
-  - {fileID: 21300000, guid: 24b194d530af48240a93ffce9ed1a9a0, type: 3}
-  - {fileID: 21300000, guid: 2dd858fb5e9c9094ba5f1053ddb5038a, type: 3}
-  - {fileID: 21300000, guid: c29d465ab08a42b489837cc5182e8032, type: 3}
+  randomButton: []
+  btn: {fileID: 154690627}
 --- !u!61 &140785746
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -843,23 +838,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.55, y: 3.61}
   m_EdgeRadius: 0
---- !u!114 &140785747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 140785742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputField: {fileID: 208593420}
-  btn: {fileID: 154690627}
-  randomNumber: {fileID: 994082082}
-  player: {fileID: 1628853764}
-  InputString: 
 --- !u!1 &154690625
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,6 +850,7 @@ GameObject:
   - component: {fileID: 154690629}
   - component: {fileID: 154690628}
   - component: {fileID: 154690627}
+  - component: {fileID: 154690630}
   m_Layer: 5
   m_Name: 7
   m_TagString: Untagged
@@ -942,7 +921,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 232257039}
+      - m_Target: {fileID: 154690630}
         m_MethodName: ButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -990,6 +969,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154690625}
   m_CullTransparentMesh: 0
+--- !u!114 &154690630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154690625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 208593420}
+  randomSprite:
+  - {fileID: 21300000, guid: c9695eca13085d94c9a2b7e88a7e1d1a, type: 3}
+  - {fileID: 21300000, guid: 2f5335fe132b2f946b74b0ce1c796d87, type: 3}
+  - {fileID: 21300000, guid: 24b194d530af48240a93ffce9ed1a9a0, type: 3}
+  - {fileID: 21300000, guid: 2dd858fb5e9c9094ba5f1053ddb5038a, type: 3}
+  - {fileID: 21300000, guid: c29d465ab08a42b489837cc5182e8032, type: 3}
+  InputString: 
 --- !u!1 &208593418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,7 +1263,6 @@ GameObject:
   - component: {fileID: 232257036}
   - component: {fileID: 232257038}
   - component: {fileID: 232257037}
-  - component: {fileID: 232257039}
   m_Layer: 0
   m_Name: 0
   m_TagString: Nomor
@@ -1330,7 +1328,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 13.33, y: 8.38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1349,8 +1347,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  randomButton:
-  - {fileID: 21300000, guid: fa41334465852844990755a414ae34c0, type: 3}
+  randomButton: []
+  btn: {fileID: 556878413}
 --- !u!61 &232257038
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1369,7 +1367,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 13.33, y: 8.38}
-    newSize: {x: 0.16, y: 0.16}
+    newSize: {x: 13.33, y: 8.38}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1377,23 +1375,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.55, y: 3.61}
   m_EdgeRadius: 0
---- !u!114 &232257039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 232257034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputField: {fileID: 208593420}
-  btn: {fileID: 556878413}
-  randomNumber: {fileID: 994082082}
-  player: {fileID: 1628853764}
-  InputString: 
 --- !u!1 &290696690
 GameObject:
   m_ObjectHideFlags: 0
@@ -2194,6 +2175,7 @@ GameObject:
   - component: {fileID: 556878415}
   - component: {fileID: 556878414}
   - component: {fileID: 556878413}
+  - component: {fileID: 556878412}
   m_Layer: 5
   m_Name: 0
   m_TagString: Untagged
@@ -2221,6 +2203,22 @@ RectTransform:
   m_AnchoredPosition: {x: 823.35, y: 201.7}
   m_SizeDelta: {x: 273.29413, y: 164.63916}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &556878412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556878410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 208593420}
+  randomSprite:
+  - {fileID: 21300000, guid: 859d3ad053f42304c884da5658199655, type: 3}
+  InputString: 
 --- !u!114 &556878413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2264,7 +2262,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 232257039}
+      - m_Target: {fileID: 556878412}
         m_MethodName: ButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -2402,6 +2400,7 @@ GameObject:
   - component: {fileID: 572734556}
   - component: {fileID: 572734555}
   - component: {fileID: 572734554}
+  - component: {fileID: 572734557}
   m_Layer: 5
   m_Name: 3
   m_TagString: Untagged
@@ -2472,7 +2471,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 232257039}
+      - m_Target: {fileID: 572734557}
         m_MethodName: ButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -2520,6 +2519,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572734552}
   m_CullTransparentMesh: 0
+--- !u!114 &572734557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572734552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 208593420}
+  randomSprite:
+  - {fileID: 21300000, guid: 87e57a245a97ab04fb687fc0c0fe06a3, type: 3}
+  - {fileID: 21300000, guid: 85fd65d9e8cc46c42be3f821ae339bbd, type: 3}
+  - {fileID: 21300000, guid: 6aaa449d7cc17b440b09776e60e26b36, type: 3}
+  - {fileID: 21300000, guid: 14ab752e364915d4cac4f5c469b60ca5, type: 3}
+  - {fileID: 21300000, guid: 379a8bab179f8bf44919f84716b717b2, type: 3}
+  InputString: 
 --- !u!1 &574086402
 GameObject:
   m_ObjectHideFlags: 0
@@ -2972,7 +2991,6 @@ GameObject:
   - component: {fileID: 608823539}
   - component: {fileID: 608823541}
   - component: {fileID: 608823540}
-  - component: {fileID: 608823542}
   m_Layer: 0
   m_Name: Button 8
   m_TagString: Nomor
@@ -3001,7 +3019,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608823537}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -3057,12 +3075,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  randomButton:
-  - {fileID: 21300000, guid: 77c1ce5cffb352a45a03ca45693c5e75, type: 3}
-  - {fileID: 21300000, guid: 494f56392bcfef149b6717ba04840f31, type: 3}
-  - {fileID: 21300000, guid: a923d688ff2267840b2752c195eb56bd, type: 3}
-  - {fileID: 21300000, guid: a6eb45a473aef644a99534bb30ee6b38, type: 3}
-  - {fileID: 21300000, guid: 951fd08e959a0414982470251414ecf0, type: 3}
+  randomButton: []
+  btn: {fileID: 698837751}
 --- !u!61 &608823541
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3089,23 +3103,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.55, y: 3.61}
   m_EdgeRadius: 0
---- !u!114 &608823542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 608823537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputField: {fileID: 208593420}
-  btn: {fileID: 698837751}
-  randomNumber: {fileID: 994082082}
-  player: {fileID: 1628853764}
-  InputString: 
 --- !u!1 &613268989
 GameObject:
   m_ObjectHideFlags: 0
@@ -3568,6 +3565,7 @@ GameObject:
   - component: {fileID: 698837753}
   - component: {fileID: 698837752}
   - component: {fileID: 698837751}
+  - component: {fileID: 698837754}
   m_Layer: 5
   m_Name: 8
   m_TagString: Untagged
@@ -3638,7 +3636,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 232257039}
+      - m_Target: {fileID: 698837754}
         m_MethodName: ButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -3686,6 +3684,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 698837749}
   m_CullTransparentMesh: 0
+--- !u!114 &698837754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698837749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 208593420}
+  randomSprite:
+  - {fileID: 21300000, guid: 77c1ce5cffb352a45a03ca45693c5e75, type: 3}
+  - {fileID: 21300000, guid: 494f56392bcfef149b6717ba04840f31, type: 3}
+  - {fileID: 21300000, guid: a923d688ff2267840b2752c195eb56bd, type: 3}
+  - {fileID: 21300000, guid: a6eb45a473aef644a99534bb30ee6b38, type: 3}
+  - {fileID: 21300000, guid: 951fd08e959a0414982470251414ecf0, type: 3}
+  InputString: 
 --- !u!1 &726551119
 GameObject:
   m_ObjectHideFlags: 0
@@ -3698,6 +3716,7 @@ GameObject:
   - component: {fileID: 726551123}
   - component: {fileID: 726551122}
   - component: {fileID: 726551121}
+  - component: {fileID: 726551124}
   m_Layer: 5
   m_Name: '-'
   m_TagString: Untagged
@@ -3746,7 +3765,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.9716981, g: 0, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -3768,7 +3787,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 232257039}
+      - m_Target: {fileID: 726551124}
         m_MethodName: ButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -3816,6 +3835,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 726551119}
   m_CullTransparentMesh: 0
+--- !u!114 &726551124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726551119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 208593420}
+  randomSprite: []
+  InputString: 
 --- !u!1 &776819772
 GameObject:
   m_ObjectHideFlags: 0
@@ -4196,6 +4230,7 @@ GameObject:
   - component: {fileID: 806029406}
   - component: {fileID: 806029405}
   - component: {fileID: 806029404}
+  - component: {fileID: 806029407}
   m_Layer: 5
   m_Name: .
   m_TagString: Untagged
@@ -4266,7 +4301,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 232257039}
+      - m_Target: {fileID: 806029407}
         m_MethodName: ButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -4314,6 +4349,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806029402}
   m_CullTransparentMesh: 0
+--- !u!114 &806029407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806029402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 208593420}
+  randomSprite: []
+  InputString: 
 --- !u!1 &822932326
 GameObject:
   m_ObjectHideFlags: 0
@@ -4771,7 +4821,6 @@ GameObject:
   - component: {fileID: 924364796}
   - component: {fileID: 924364798}
   - component: {fileID: 924364797}
-  - component: {fileID: 924364799}
   m_Layer: 0
   m_Name: Button 3
   m_TagString: Nomor
@@ -4800,7 +4849,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924364794}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -4856,12 +4905,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  randomButton:
-  - {fileID: 21300000, guid: 87e57a245a97ab04fb687fc0c0fe06a3, type: 3}
-  - {fileID: 21300000, guid: 85fd65d9e8cc46c42be3f821ae339bbd, type: 3}
-  - {fileID: 21300000, guid: 6aaa449d7cc17b440b09776e60e26b36, type: 3}
-  - {fileID: 21300000, guid: 14ab752e364915d4cac4f5c469b60ca5, type: 3}
-  - {fileID: 21300000, guid: 379a8bab179f8bf44919f84716b717b2, type: 3}
+  randomButton: []
+  btn: {fileID: 572734554}
 --- !u!61 &924364798
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4888,23 +4933,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.55, y: 3.61}
   m_EdgeRadius: 0
---- !u!114 &924364799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924364794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputField: {fileID: 208593420}
-  btn: {fileID: 572734554}
-  randomNumber: {fileID: 994082082}
-  player: {fileID: 1628853764}
-  InputString: 
 --- !u!1 &948050541
 GameObject:
   m_ObjectHideFlags: 0
@@ -5052,7 +5080,6 @@ GameObject:
   - component: {fileID: 952242548}
   - component: {fileID: 952242550}
   - component: {fileID: 952242549}
-  - component: {fileID: 952242551}
   m_Layer: 0
   m_Name: Button 9
   m_TagString: Nomor
@@ -5081,7 +5108,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952242546}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -5137,12 +5164,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  randomButton:
-  - {fileID: 21300000, guid: 8062ecb20170aa046bb0e4b17d879fcf, type: 3}
-  - {fileID: 21300000, guid: 0e8562ea4d6195c468c79f4e69e3589c, type: 3}
-  - {fileID: 21300000, guid: dd53ea0f2fc362b4a86f2c82d851d864, type: 3}
-  - {fileID: 21300000, guid: b5bdbb19186e72f429c280f3908c7b6c, type: 3}
-  - {fileID: 21300000, guid: 1915876ceb7e7d54981f11b07045e144, type: 3}
+  randomButton: []
+  btn: {fileID: 1478388276}
 --- !u!61 &952242550
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5169,23 +5192,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.55, y: 3.61}
   m_EdgeRadius: 0
---- !u!114 &952242551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952242546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputField: {fileID: 208593420}
-  btn: {fileID: 1478388276}
-  randomNumber: {fileID: 994082082}
-  player: {fileID: 1628853764}
-  InputString: 
 --- !u!1 &954601031
 GameObject:
   m_ObjectHideFlags: 0
@@ -5446,7 +5452,7 @@ MonoBehaviour:
   txt_aritmatika: {fileID: 1426122357}
   txt_hasil: {fileID: 1994125228}
   txt_input: {fileID: 219522300}
-  button: {fileID: 232257039}
+  button: {fileID: 556878412}
   gmTimer: {fileID: 1912289619}
   hasil: 0
   inputJawaban: 0
@@ -5558,6 +5564,7 @@ GameObject:
   - component: {fileID: 1048943395}
   - component: {fileID: 1048943394}
   - component: {fileID: 1048943393}
+  - component: {fileID: 1048943396}
   m_Layer: 5
   m_Name: 5
   m_TagString: Untagged
@@ -5628,7 +5635,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 232257039}
+      - m_Target: {fileID: 1048943396}
         m_MethodName: ButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -5676,6 +5683,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048943391}
   m_CullTransparentMesh: 0
+--- !u!114 &1048943396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048943391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 208593420}
+  randomSprite:
+  - {fileID: 21300000, guid: 044d4525d5d71b14e8d732fc0852cbbf, type: 3}
+  - {fileID: 21300000, guid: d1f7dfc6288733141b5119c21140ea35, type: 3}
+  - {fileID: 21300000, guid: 798b63e7653414642855d0cccf31231b, type: 3}
+  - {fileID: 21300000, guid: 47a0ab2fba2450a42afbeb9142efa733, type: 3}
+  - {fileID: 21300000, guid: 56dfcd84dff973647a3af404c10e4e4b, type: 3}
+  InputString: 
 --- !u!1 &1055531590
 GameObject:
   m_ObjectHideFlags: 0
@@ -5821,7 +5848,6 @@ GameObject:
   - component: {fileID: 1056915093}
   - component: {fileID: 1056915092}
   - component: {fileID: 1056915091}
-  - component: {fileID: 1056915090}
   m_Layer: 0
   m_Name: minus
   m_TagString: Nomor
@@ -5843,23 +5869,6 @@ Transform:
   m_Father: {fileID: 1207017661}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1056915090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1056915088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputField: {fileID: 208593420}
-  btn: {fileID: 1687062514}
-  randomNumber: {fileID: 994082082}
-  player: {fileID: 1628853764}
-  InputString: 
 --- !u!114 &1056915091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5873,8 +5882,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  randomButton:
-  - {fileID: 21300000, guid: 1eed03073c2f2cc4abdacbee67cc3f36, type: 3}
+  randomButton: []
+  btn: {fileID: 726551121}
 --- !u!61 &1056915092
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5908,7 +5917,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056915088}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -6249,7 +6258,6 @@ GameObject:
   - component: {fileID: 1132349520}
   - component: {fileID: 1132349522}
   - component: {fileID: 1132349521}
-  - component: {fileID: 1132349523}
   m_Layer: 0
   m_Name: Button 6
   m_TagString: Nomor
@@ -6278,7 +6286,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132349518}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -6334,12 +6342,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  randomButton:
-  - {fileID: 21300000, guid: 7516a44e35a91094684403f55f898cc7, type: 3}
-  - {fileID: 21300000, guid: 4b5f19283307692438cf20abad8a4a13, type: 3}
-  - {fileID: 21300000, guid: 3b7961dc28aa23448a3119e18e9f8124, type: 3}
-  - {fileID: 21300000, guid: 5a14a4d8b82eb074ba6ad263b1a295ac, type: 3}
-  - {fileID: 21300000, guid: 3d15be66df18bbb4b8cf9572bcfb209f, type: 3}
+  randomButton: []
+  btn: {fileID: 1372633400}
 --- !u!61 &1132349522
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6366,23 +6370,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.55, y: 3.61}
   m_EdgeRadius: 0
---- !u!114 &1132349523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132349518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputField: {fileID: 208593420}
-  btn: {fileID: 1372633400}
-  randomNumber: {fileID: 994082082}
-  player: {fileID: 1628853764}
-  InputString: 
 --- !u!1 &1136372633
 GameObject:
   m_ObjectHideFlags: 0
@@ -7309,6 +7296,7 @@ GameObject:
   - component: {fileID: 1273813084}
   - component: {fileID: 1273813083}
   - component: {fileID: 1273813082}
+  - component: {fileID: 1273813085}
   m_Layer: 5
   m_Name: 1
   m_TagString: Untagged
@@ -7379,7 +7367,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 232257039}
+      - m_Target: {fileID: 1273813085}
         m_MethodName: ButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -7427,6 +7415,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273813080}
   m_CullTransparentMesh: 0
+--- !u!114 &1273813085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273813080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 208593420}
+  randomSprite:
+  - {fileID: 21300000, guid: 6a0a543a2e6f3f04e9f918020bea43f1, type: 3}
+  - {fileID: 21300000, guid: 93eaf81f41ece024ab001cddb4657efb, type: 3}
+  - {fileID: 21300000, guid: 490710b39d33eee418f3a2deabc6e385, type: 3}
+  - {fileID: 21300000, guid: 4739e0ec8f780d547869578d09f1f2db, type: 3}
+  - {fileID: 21300000, guid: 6a480d712dd68ac48b74723c7f40187e, type: 3}
+  InputString: 
 --- !u!1 &1314827292
 GameObject:
   m_ObjectHideFlags: 0
@@ -7599,7 +7607,6 @@ GameObject:
   - component: {fileID: 1365024733}
   - component: {fileID: 1365024735}
   - component: {fileID: 1365024734}
-  - component: {fileID: 1365024736}
   m_Layer: 0
   m_Name: 1
   m_TagString: Nomor
@@ -7628,7 +7635,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365024731}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -7684,12 +7691,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  randomButton:
-  - {fileID: 21300000, guid: 6a0a543a2e6f3f04e9f918020bea43f1, type: 3}
-  - {fileID: 21300000, guid: 93eaf81f41ece024ab001cddb4657efb, type: 3}
-  - {fileID: 21300000, guid: 490710b39d33eee418f3a2deabc6e385, type: 3}
-  - {fileID: 21300000, guid: 4739e0ec8f780d547869578d09f1f2db, type: 3}
-  - {fileID: 21300000, guid: 6a480d712dd68ac48b74723c7f40187e, type: 3}
+  randomButton: []
+  btn: {fileID: 1273813082}
 --- !u!61 &1365024735
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7716,23 +7719,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.55, y: 3.61}
   m_EdgeRadius: 0
---- !u!114 &1365024736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1365024731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputField: {fileID: 208593420}
-  btn: {fileID: 1273813082}
-  randomNumber: {fileID: 994082082}
-  player: {fileID: 1628853764}
-  InputString: 
 --- !u!1 &1372633398
 GameObject:
   m_ObjectHideFlags: 0
@@ -7745,6 +7731,7 @@ GameObject:
   - component: {fileID: 1372633402}
   - component: {fileID: 1372633401}
   - component: {fileID: 1372633400}
+  - component: {fileID: 1372633403}
   m_Layer: 5
   m_Name: 6
   m_TagString: Untagged
@@ -7815,7 +7802,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 232257039}
+      - m_Target: {fileID: 1372633403}
         m_MethodName: ButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -7863,6 +7850,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1372633398}
   m_CullTransparentMesh: 0
+--- !u!114 &1372633403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372633398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 208593420}
+  randomSprite:
+  - {fileID: 21300000, guid: 7516a44e35a91094684403f55f898cc7, type: 3}
+  - {fileID: 21300000, guid: 4b5f19283307692438cf20abad8a4a13, type: 3}
+  - {fileID: 21300000, guid: 3b7961dc28aa23448a3119e18e9f8124, type: 3}
+  - {fileID: 21300000, guid: 5a14a4d8b82eb074ba6ad263b1a295ac, type: 3}
+  - {fileID: 21300000, guid: 3d15be66df18bbb4b8cf9572bcfb209f, type: 3}
+  InputString: 
 --- !u!1 &1379573515
 GameObject:
   m_ObjectHideFlags: 0
@@ -8430,7 +8437,6 @@ GameObject:
   - component: {fileID: 1410411270}
   - component: {fileID: 1410411269}
   - component: {fileID: 1410411268}
-  - component: {fileID: 1410411267}
   m_Layer: 0
   m_Name: koma
   m_TagString: Nomor
@@ -8452,23 +8458,6 @@ Transform:
   m_Father: {fileID: 1207017661}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1410411267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410411265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputField: {fileID: 208593420}
-  btn: {fileID: 1048943393}
-  randomNumber: {fileID: 994082082}
-  player: {fileID: 1628853764}
-  InputString: 
 --- !u!114 &1410411268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8482,8 +8471,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  randomButton:
-  - {fileID: 21300000, guid: 287f85a52f30abd4f9c6510dd9097185, type: 3}
+  randomButton: []
+  btn: {fileID: 806029404}
 --- !u!61 &1410411269
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8517,7 +8506,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410411265}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -8805,6 +8794,7 @@ GameObject:
   - component: {fileID: 1478388278}
   - component: {fileID: 1478388277}
   - component: {fileID: 1478388276}
+  - component: {fileID: 1478388279}
   m_Layer: 5
   m_Name: 9
   m_TagString: Untagged
@@ -8875,7 +8865,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 232257039}
+      - m_Target: {fileID: 1478388279}
         m_MethodName: ButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -8923,6 +8913,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478388274}
   m_CullTransparentMesh: 0
+--- !u!114 &1478388279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478388274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 208593420}
+  randomSprite:
+  - {fileID: 21300000, guid: 8062ecb20170aa046bb0e4b17d879fcf, type: 3}
+  - {fileID: 21300000, guid: 0e8562ea4d6195c468c79f4e69e3589c, type: 3}
+  - {fileID: 21300000, guid: dd53ea0f2fc362b4a86f2c82d851d864, type: 3}
+  - {fileID: 21300000, guid: b5bdbb19186e72f429c280f3908c7b6c, type: 3}
+  - {fileID: 21300000, guid: 1915876ceb7e7d54981f11b07045e144, type: 3}
+  InputString: 
 --- !u!1 &1486129649
 GameObject:
   m_ObjectHideFlags: 0
@@ -9498,7 +9508,6 @@ GameObject:
   - component: {fileID: 1619232573}
   - component: {fileID: 1619232575}
   - component: {fileID: 1619232574}
-  - component: {fileID: 1619232576}
   m_Layer: 0
   m_Name: Button 5
   m_TagString: Nomor
@@ -9527,7 +9536,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1619232571}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -9583,12 +9592,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  randomButton:
-  - {fileID: 21300000, guid: 044d4525d5d71b14e8d732fc0852cbbf, type: 3}
-  - {fileID: 21300000, guid: d1f7dfc6288733141b5119c21140ea35, type: 3}
-  - {fileID: 21300000, guid: 798b63e7653414642855d0cccf31231b, type: 3}
-  - {fileID: 21300000, guid: 47a0ab2fba2450a42afbeb9142efa733, type: 3}
-  - {fileID: 21300000, guid: 56dfcd84dff973647a3af404c10e4e4b, type: 3}
+  randomButton: []
+  btn: {fileID: 1048943393}
 --- !u!61 &1619232575
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9615,23 +9620,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.55, y: 3.61}
   m_EdgeRadius: 0
---- !u!114 &1619232576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619232571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputField: {fileID: 208593420}
-  btn: {fileID: 1048943393}
-  randomNumber: {fileID: 994082082}
-  player: {fileID: 1628853764}
-  InputString: 
 --- !u!1 &1621395186
 GameObject:
   m_ObjectHideFlags: 0
@@ -9758,7 +9746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 5
   canPress: 0
-  button: {fileID: 232257039}
+  button: {fileID: 0}
   inputField: {fileID: 219522300}
 --- !u!50 &1628853765
 Rigidbody2D:
@@ -10488,6 +10476,7 @@ GameObject:
   - component: {fileID: 1687062516}
   - component: {fileID: 1687062515}
   - component: {fileID: 1687062514}
+  - component: {fileID: 1687062517}
   m_Layer: 5
   m_Name: 4
   m_TagString: Untagged
@@ -10558,7 +10547,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 232257039}
+      - m_Target: {fileID: 1687062517}
         m_MethodName: ButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -10606,6 +10595,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687062512}
   m_CullTransparentMesh: 0
+--- !u!114 &1687062517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687062512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 208593420}
+  randomSprite:
+  - {fileID: 21300000, guid: 1e05b5aebb3d5624cb1a693a0b804869, type: 3}
+  - {fileID: 21300000, guid: f776299f5a4062143a03d290c719e0ea, type: 3}
+  - {fileID: 21300000, guid: 32bc822065e8be542a078ecaa3f395bc, type: 3}
+  - {fileID: 21300000, guid: 9d98ef5ca78fc1f48bbf60d2fd390ea2, type: 3}
+  - {fileID: 21300000, guid: 59a3cc860834e7b4085dd4dc00553a00, type: 3}
+  InputString: 
 --- !u!1 &1709751531
 GameObject:
   m_ObjectHideFlags: 0
@@ -12604,7 +12613,6 @@ GameObject:
   - component: {fileID: 2009274351}
   - component: {fileID: 2009274353}
   - component: {fileID: 2009274352}
-  - component: {fileID: 2009274354}
   m_Layer: 0
   m_Name: Button 2
   m_TagString: Nomor
@@ -12633,7 +12641,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2009274349}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -12689,12 +12697,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  randomButton:
-  - {fileID: 21300000, guid: 7d6d477913a2df64bb3d863647b56d48, type: 3}
-  - {fileID: 21300000, guid: 427c9dfe4c47bec428c97796f67852fa, type: 3}
-  - {fileID: 21300000, guid: 6ec9db195eda1fb46bf66b88f01274bb, type: 3}
-  - {fileID: 21300000, guid: f0a44401401d7244f9ad57f717a9a788, type: 3}
-  - {fileID: 21300000, guid: 7e96965506478b6419201acddbbb2e35, type: 3}
+  randomButton: []
+  btn: {fileID: 2099097111}
 --- !u!61 &2009274353
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12721,23 +12725,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.55, y: 3.61}
   m_EdgeRadius: 0
---- !u!114 &2009274354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2009274349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputField: {fileID: 208593420}
-  btn: {fileID: 2099097111}
-  randomNumber: {fileID: 994082082}
-  player: {fileID: 1628853764}
-  InputString: 
 --- !u!1 &2021201494
 GameObject:
   m_ObjectHideFlags: 0
@@ -13110,6 +13097,7 @@ GameObject:
   - component: {fileID: 2099097113}
   - component: {fileID: 2099097112}
   - component: {fileID: 2099097111}
+  - component: {fileID: 2099097114}
   m_Layer: 5
   m_Name: 2
   m_TagString: Untagged
@@ -13180,7 +13168,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 232257039}
+      - m_Target: {fileID: 2099097114}
         m_MethodName: ButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -13228,6 +13216,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099097109}
   m_CullTransparentMesh: 0
+--- !u!114 &2099097114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099097109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 208593420}
+  randomSprite:
+  - {fileID: 21300000, guid: 7d6d477913a2df64bb3d863647b56d48, type: 3}
+  - {fileID: 21300000, guid: 427c9dfe4c47bec428c97796f67852fa, type: 3}
+  - {fileID: 21300000, guid: 6ec9db195eda1fb46bf66b88f01274bb, type: 3}
+  - {fileID: 21300000, guid: f0a44401401d7244f9ad57f717a9a788, type: 3}
+  - {fileID: 21300000, guid: 7e96965506478b6419201acddbbb2e35, type: 3}
+  InputString: 
 --- !u!1 &2107223899
 GameObject:
   m_ObjectHideFlags: 0
@@ -13240,7 +13248,6 @@ GameObject:
   - component: {fileID: 2107223901}
   - component: {fileID: 2107223903}
   - component: {fileID: 2107223902}
-  - component: {fileID: 2107223904}
   m_Layer: 0
   m_Name: Button 4
   m_TagString: Nomor
@@ -13269,7 +13276,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107223899}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -13325,12 +13332,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  randomButton:
-  - {fileID: 21300000, guid: 1e05b5aebb3d5624cb1a693a0b804869, type: 3}
-  - {fileID: 21300000, guid: f776299f5a4062143a03d290c719e0ea, type: 3}
-  - {fileID: 21300000, guid: 32bc822065e8be542a078ecaa3f395bc, type: 3}
-  - {fileID: 21300000, guid: 9d98ef5ca78fc1f48bbf60d2fd390ea2, type: 3}
-  - {fileID: 21300000, guid: 59a3cc860834e7b4085dd4dc00553a00, type: 3}
+  randomButton: []
+  btn: {fileID: 1687062514}
 --- !u!61 &2107223903
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13357,20 +13360,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.55, y: 3.61}
   m_EdgeRadius: 0
---- !u!114 &2107223904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2107223899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88c3b2d4a9ca7b48953572f42c67154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputField: {fileID: 208593420}
-  btn: {fileID: 1687062514}
-  randomNumber: {fileID: 994082082}
-  player: {fileID: 1628853764}
-  InputString: 
