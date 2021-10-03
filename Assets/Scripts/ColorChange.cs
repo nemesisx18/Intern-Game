@@ -25,7 +25,7 @@ public class ColorChange : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             this.btn.interactable = true;
-            spriteRenderer.color = new Color(255, 0, 0);
+            spriteRenderer.color = new Color(255, 080, 049, 255);
         }
     }
 
@@ -34,7 +34,7 @@ public class ColorChange : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             this.btn.interactable = false;
-            spriteRenderer.color = new Color(255, 255, 255);
+            spriteRenderer.color = new Color(255, 255, 255, 0);
         }
     }
 }
