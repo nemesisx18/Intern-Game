@@ -30,7 +30,7 @@ public class RandomNumber : MonoBehaviour
 
     private void Update()
     {
-        inputJawaban = System.Convert.ToDouble(button.InputString);
+        inputJawaban = System.Convert.ToDouble(gmTimer.jawabanInput);
         txt_input.text = inputJawaban.ToString();
         if (inputJawaban != null)
         {
@@ -45,9 +45,15 @@ public class RandomNumber : MonoBehaviour
         {
             RandomNumberAll();
 
-            button.InputString = "";
+            gmTimer.jawabanInput = null;
             gmTimer.timeRemaining += 5f;
+            gmTimer.AddScore();
         }
+    }
+
+    public void resetJawaban()
+    {
+        gmTimer.jawabanInput = null;
     }
 
     public void inputJawabanKunci(double jawaban)
@@ -62,11 +68,11 @@ public class RandomNumber : MonoBehaviour
         {
             RandomNumberAll();
 
-            button.InputString = "";
+            gmTimer.jawabanInput = null;
         }
         if (inputJawaban != hasil)
         {
-            button.InputString = "";
+            gmTimer.jawabanInput = null;
         }
     }
 
