@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class GameTimer : MonoBehaviour
@@ -11,6 +12,8 @@ public class GameTimer : MonoBehaviour
     public string jawabanInput;
 
     public bool timerIsRunning = false;
+
+    public GameObject colorTime;
 
     public TextMeshProUGUI timeText;
     public TextMeshProUGUI scoreText;
@@ -45,10 +48,28 @@ public class GameTimer : MonoBehaviour
             {
                 timeRemaining -= Time.deltaTime;
                 DisplayTime(timeRemaining);
+
+                // timer Font Color
+                float H = 0.35f / (60 / (float) timeRemaining);
+                float S = 1f; // Saturation
+                float B = 0.75f; // Brightness
+
+                Color timeColor = Color.HSVToRGB(H, S, B); //Font Colour
+                colorTime.GetComponent<Image>().color = timeColor;
             }
             else
             {
                 Debug.Log("Time has run out!");
+
+                // timer Font Color
+                float H = 0f;
+                float S = 1f; // Saturation
+                float B = 0.75f; // Brightness
+
+                Color timeColor = Color.HSVToRGB(H, S, B); //Font Colour
+                colorTime.GetComponent<Image>().color = timeColor;
+
+                Time.timeScale = 0;
                 SetHighScore();
             }
         }

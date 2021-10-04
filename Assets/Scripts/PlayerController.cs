@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
 
     public Button_0 button;
     [SerializeField] TMP_InputField inputField;
+    public TrapActivator trap;
 
     string InputString;
 
@@ -36,9 +37,10 @@ public class PlayerController : MonoBehaviour
 
     public IEnumerator Slowed()
     {
+        yield return new WaitForSeconds(1.5f);
         playerSpeed = 2f;
         yield return new WaitForSeconds(1f);
-        playerSpeed = 5f;
+        playerSpeed = 7.5f;
     }
 
     //private bool IsGrounded()
@@ -51,8 +53,8 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Puzzle")
         {
-            //do something
             Debug.Log("menginjak spike");
+            StartCoroutine(Slowed());
         }
     }
 }

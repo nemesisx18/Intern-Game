@@ -6,26 +6,28 @@ public class TrapActivator : MonoBehaviour
 {
     public PlayerController player;
 
-    void Update()
+    //void Start()
+    //{
+    //    StartCoroutine(DelaySpike());
+    //}
+
+    public void SlowPlayer()
     {
-        StartCoroutine(DelaySpike());
+        StartCoroutine(Slowed());
     }
 
-    void SlowPlayer()
+    public IEnumerator DelaySpike()
     {
-        StartCoroutine(player.Slowed());
-    }
-
-    IEnumerator DelaySpike()
-    {
-        yield return new WaitForSecondsRealtime(2.5f);
+        yield return new WaitForSeconds(2.5f);
         SlowPlayer();
     }
 
-    //IEnumerator Slowed()
-    //{
-    //    player.playerSpeed = 2f;
-    //    yield return new WaitForSeconds(1f);
-    //    player.playerSpeed = 5f;
-    //}
+    public IEnumerator Slowed()
+    {
+        yield return new WaitForSeconds(0.1f);
+        Debug.Log("test slow");
+        //player.playerSpeed = 2f;
+        //yield return new WaitForSeconds(1f);
+        //player.playerSpeed = 7.5f;
+    }
 }
