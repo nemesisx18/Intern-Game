@@ -78,9 +78,31 @@ public class RandomNumber : MonoBehaviour
 
     public void RandomNumberAll()
     {
+        if (gmTimer.levelSelect == 1)
+        {
+            aritmatika = 0;
+            AritmatikaMethod();
+        }
+        else if (gmTimer.levelSelect == 2)
+        {
+            aritmatika = Random.Range(0, 2);
+            AritmatikaMethod();
+        }
+        else if (gmTimer.levelSelect == 3)
+        {
+            aritmatika = Random.Range(0, 3);
+            AritmatikaMethod();
+        }
+        else if (gmTimer.levelSelect == 4)
+        {
+            aritmatika = Random.Range(0, 4);
+            AritmatikaMethod();
+        }
         
-        aritmatika = Random.Range(0, 4);
+    }
 
+    private void AritmatikaMethod()
+    {
         //ARITMATIKA PENJUMLAHAN (+)
         if (aritmatika == 0)
         {
@@ -111,17 +133,17 @@ public class RandomNumber : MonoBehaviour
         //ARITMATIKA PEMBAGIAN (:)
         else if (aritmatika == 3)
         {
-            int element = Random.Range(0,soal_angka1.Length);
+            int element = Random.Range(0, soal_angka1.Length);
             angka1 = soal_angka1[element];
             angka2 = soal_angka2[element];
             txt_aritmatika.text = " : ";
             hasil = angka1 / angka2;
-            
+
         }
-        
+
         //float a = Mathf.Round(hasil);
         txt_angka1.text = angka1.ToString();
         txt_angka2.text = angka2.ToString();
         txt_hasil.text = hasil.ToString("0.##");
-    } 
+    }
 }

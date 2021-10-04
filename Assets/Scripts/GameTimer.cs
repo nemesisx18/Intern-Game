@@ -8,6 +8,7 @@ public class GameTimer : MonoBehaviour
 {
     public float timeRemaining = 10;
     public float score;
+    public int levelSelect;
 
     public string jawabanInput;
 
@@ -87,10 +88,35 @@ public class GameTimer : MonoBehaviour
 
     public void SetHighScore()
     {
-        if (score > PlayerPrefs.GetFloat("HighScore", 0))
+        if (levelSelect == 1)
         {
-            PlayerPrefs.SetFloat("HighScore", score);
+            if (score > PlayerPrefs.GetFloat("HighScore", 0))
+            {
+                PlayerPrefs.SetFloat("HighScore", score);
+            }
         }
+        else if (levelSelect == 2)
+        {
+            if (score > PlayerPrefs.GetFloat("HighScore2", 0))
+            {
+                PlayerPrefs.SetFloat("HighScore2", score);
+            }
+        }
+        else if (levelSelect == 3)
+        {
+            if (score > PlayerPrefs.GetFloat("HighScore3", 0))
+            {
+                PlayerPrefs.SetFloat("HighScore3", score);
+            }
+        }
+        else if (levelSelect == 2)
+        {
+            if (score > PlayerPrefs.GetFloat("HighScore4", 0))
+            {
+                PlayerPrefs.SetFloat("HighScore4", score);
+            }
+        }
+
     }
 
 }
