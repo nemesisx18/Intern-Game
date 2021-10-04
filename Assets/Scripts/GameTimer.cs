@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameTimer : MonoBehaviour
@@ -9,6 +10,7 @@ public class GameTimer : MonoBehaviour
     public float timeRemaining = 10;
     public float score;
     public int levelSelect;
+    public int nextSceneLoad;
 
     public string jawabanInput;
 
@@ -23,6 +25,7 @@ public class GameTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
         timerIsRunning = true;
         scoreText.text = score.ToString();
         //HighscoreText.text = PlayerPrefs.GetFloat("Highscore").ToString();
@@ -88,18 +91,30 @@ public class GameTimer : MonoBehaviour
 
     public void SetHighScore()
     {
+
         if (levelSelect == 1)
         {
             if (score > PlayerPrefs.GetFloat("HighScore", 0))
             {
                 PlayerPrefs.SetFloat("HighScore", score);
             }
+
+            if (score >= 50)
+            {
+                NextLevel();
+            }
+            
         }
         else if (levelSelect == 2)
         {
             if (score > PlayerPrefs.GetFloat("HighScore2", 0))
             {
                 PlayerPrefs.SetFloat("HighScore2", score);
+            }
+
+            if (score >= 40)
+            {
+                NextLevel();
             }
         }
         else if (levelSelect == 3)
@@ -108,15 +123,32 @@ public class GameTimer : MonoBehaviour
             {
                 PlayerPrefs.SetFloat("HighScore3", score);
             }
+
+            if (score >= 30)
+            {
+                NextLevel();
+            }
         }
-        else if (levelSelect == 2)
+        else if (levelSelect == 4)
         {
             if (score > PlayerPrefs.GetFloat("HighScore4", 0))
             {
                 PlayerPrefs.SetFloat("HighScore4", score);
             }
+
+            if (score >= 50)
+            {
+                NextLevel();
+            }
         }
 
     }
 
+    private void NextLevel()
+    {
+        if (nextSceneLoad > PlayerPrefs.GetInt("levelAt"))
+        {
+            PlayerPrefs.SetInt("levelAt", nextSceneLoad);
+        }
+    }
 }
