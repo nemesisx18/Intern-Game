@@ -215,7 +215,6 @@ GameObject:
   - component: {fileID: 31621219}
   - component: {fileID: 31621218}
   - component: {fileID: 31621217}
-  - component: {fileID: 31621216}
   m_Layer: 0
   m_Name: Spike (12)
   m_TagString: Puzzle
@@ -237,19 +236,6 @@ Transform:
   m_Father: {fileID: 90479440}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &31621216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 31621214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!95 &31621217
 Animator:
   serializedVersion: 3
@@ -440,7 +426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &80954847
 RectTransform:
   m_ObjectHideFlags: 0
@@ -481,8 +467,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: HIGH SCORE
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6e38f88d31242394ea25c111a146583c, type: 2}
+  m_sharedMaterial: {fileID: 7402727535822430951, guid: 6e38f88d31242394ea25c111a146583c,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -506,7 +493,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.1
+  m_fontSize: 62.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2836,7 +2823,6 @@ GameObject:
   - component: {fileID: 574086407}
   - component: {fileID: 574086406}
   - component: {fileID: 574086405}
-  - component: {fileID: 574086404}
   m_Layer: 0
   m_Name: Spike (24)
   m_TagString: Puzzle
@@ -2853,24 +2839,11 @@ Transform:
   m_GameObject: {fileID: 574086402}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.584, y: 0.2750001, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6308562, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.6308562, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &574086404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 574086402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!95 &574086405
 Animator:
   serializedVersion: 3
@@ -3275,7 +3248,6 @@ GameObject:
   - component: {fileID: 593190688}
   - component: {fileID: 593190687}
   - component: {fileID: 593190686}
-  - component: {fileID: 593190685}
   m_Layer: 0
   m_Name: Spike (27)
   m_TagString: Puzzle
@@ -3292,24 +3264,11 @@ Transform:
   m_GameObject: {fileID: 593190683}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.59, y: -3.879, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6308562, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.6308562, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &593190685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 593190683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!95 &593190686
 Animator:
   serializedVersion: 3
@@ -3541,7 +3500,6 @@ GameObject:
   - component: {fileID: 613268994}
   - component: {fileID: 613268993}
   - component: {fileID: 613268992}
-  - component: {fileID: 613268991}
   m_Layer: 0
   m_Name: Spike (15)
   m_TagString: Puzzle
@@ -3563,19 +3521,6 @@ Transform:
   m_Father: {fileID: 90479440}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &613268991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613268989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!95 &613268992
 Animator:
   serializedVersion: 3
@@ -3729,8 +3674,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: SCORE
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6e38f88d31242394ea25c111a146583c, type: 2}
+  m_sharedMaterial: {fileID: 7402727535822430951, guid: 6e38f88d31242394ea25c111a146583c,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3754,7 +3700,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36.6
+  m_fontSize: 45.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3980,7 +3926,6 @@ GameObject:
   - component: {fileID: 678231092}
   - component: {fileID: 678231091}
   - component: {fileID: 678231093}
-  - component: {fileID: 678231094}
   m_Layer: 0
   m_Name: Spike (1)
   m_TagString: Puzzle
@@ -3997,7 +3942,7 @@ Transform:
   m_GameObject: {fileID: 678231089}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.58, y: 0.27, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6308562, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.6308562, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 1
@@ -4097,19 +4042,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &678231094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 678231089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!1 &698837749
 GameObject:
   m_ObjectHideFlags: 0
@@ -4426,7 +4358,6 @@ GameObject:
   - component: {fileID: 741066269}
   - component: {fileID: 741066268}
   - component: {fileID: 741066267}
-  - component: {fileID: 741066266}
   m_Layer: 0
   m_Name: Spike (26)
   m_TagString: Puzzle
@@ -4443,24 +4374,11 @@ Transform:
   m_GameObject: {fileID: 741066264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.585, y: -2.553, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6308562, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.6308562, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &741066266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741066264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!95 &741066267
 Animator:
   serializedVersion: 3
@@ -4568,7 +4486,6 @@ GameObject:
   - component: {fileID: 776819775}
   - component: {fileID: 776819774}
   - component: {fileID: 776819776}
-  - component: {fileID: 776819777}
   m_Layer: 0
   m_Name: Spike (9)
   m_TagString: Puzzle
@@ -4685,19 +4602,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &776819777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776819772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!1 &780234377
 GameObject:
   m_ObjectHideFlags: 0
@@ -4710,7 +4614,6 @@ GameObject:
   - component: {fileID: 780234380}
   - component: {fileID: 780234379}
   - component: {fileID: 780234381}
-  - component: {fileID: 780234382}
   m_Layer: 0
   m_Name: Spike (7)
   m_TagString: Puzzle
@@ -4727,7 +4630,7 @@ Transform:
   m_GameObject: {fileID: 780234377}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.34, y: -1.14, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6308562, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.6308562, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 7
@@ -4827,19 +4730,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &780234382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780234377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!1 &780524431
 GameObject:
   m_ObjectHideFlags: 0
@@ -5064,7 +4954,6 @@ GameObject:
   - component: {fileID: 822932331}
   - component: {fileID: 822932330}
   - component: {fileID: 822932329}
-  - component: {fileID: 822932328}
   m_Layer: 0
   m_Name: Spike (23)
   m_TagString: Puzzle
@@ -5081,24 +4970,11 @@ Transform:
   m_GameObject: {fileID: 822932326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.6, y: 1.7160001, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6308562, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.6308562, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &822932328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 822932326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!95 &822932329
 Animator:
   serializedVersion: 3
@@ -5284,7 +5160,6 @@ GameObject:
   - component: {fileID: 828899719}
   - component: {fileID: 828899718}
   - component: {fileID: 828899720}
-  - component: {fileID: 828899721}
   m_Layer: 0
   m_Name: Spike (11)
   m_TagString: Puzzle
@@ -5401,19 +5276,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &828899721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 828899716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!1 &924364794
 GameObject:
   m_ObjectHideFlags: 0
@@ -5606,8 +5468,9 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6e38f88d31242394ea25c111a146583c, type: 2}
+  m_sharedMaterial: {fileID: 7402727535822430951, guid: 6e38f88d31242394ea25c111a146583c,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5809,7 +5672,6 @@ GameObject:
   - component: {fileID: 954601036}
   - component: {fileID: 954601035}
   - component: {fileID: 954601034}
-  - component: {fileID: 954601033}
   m_Layer: 0
   m_Name: Spike (19)
   m_TagString: Puzzle
@@ -5826,24 +5688,11 @@ Transform:
   m_GameObject: {fileID: 954601031}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.35, y: 1.7, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6308562, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.6308562, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &954601033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954601031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!95 &954601034
 Animator:
   serializedVersion: 3
@@ -6031,6 +5880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 994082083}
   - component: {fileID: 994082082}
+  - component: {fileID: 994082084}
   m_Layer: 0
   m_Name: RandomNumber
   m_TagString: Untagged
@@ -6058,6 +5908,8 @@ MonoBehaviour:
   txt_input: {fileID: 219522300}
   button: {fileID: 556878412}
   gmTimer: {fileID: 1912289619}
+  audio: {fileID: 994082084}
+  clip: {fileID: 8300000, guid: b220533e08bf7d54996aba919c314459, type: 3}
   hasil: 0
   inputJawaban: 0
   soal_angka1:
@@ -6100,6 +5952,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &994082084
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994082081}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1021925118
 GameObject:
   m_ObjectHideFlags: 0
@@ -6754,7 +6702,6 @@ GameObject:
   - component: {fileID: 1099987823}
   - component: {fileID: 1099987822}
   - component: {fileID: 1099987821}
-  - component: {fileID: 1099987820}
   m_Layer: 0
   m_Name: Spike (25)
   m_TagString: Puzzle
@@ -6771,24 +6718,11 @@ Transform:
   m_GameObject: {fileID: 1099987818}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.59, y: -1.0789999, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6308562, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.6308562, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1099987820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099987818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!95 &1099987821
 Animator:
   serializedVersion: 3
@@ -7020,7 +6954,6 @@ GameObject:
   - component: {fileID: 1136372636}
   - component: {fileID: 1136372635}
   - component: {fileID: 1136372637}
-  - component: {fileID: 1136372638}
   m_Layer: 0
   m_Name: Spike (5)
   m_TagString: Puzzle
@@ -7037,7 +6970,7 @@ Transform:
   m_GameObject: {fileID: 1136372633}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.34, y: 1.66, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6308562, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.6308562, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 5
@@ -7137,19 +7070,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1136372638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1136372633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!1 &1147121759
 GameObject:
   m_ObjectHideFlags: 0
@@ -7240,7 +7160,6 @@ GameObject:
   - component: {fileID: 1169921174}
   - component: {fileID: 1169921173}
   - component: {fileID: 1169921175}
-  - component: {fileID: 1169921176}
   m_Layer: 0
   m_Name: Spike (6)
   m_TagString: Puzzle
@@ -7257,7 +7176,7 @@ Transform:
   m_GameObject: {fileID: 1169921171}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.35, y: 0.27, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6308562, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.6308562, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 6
@@ -7357,19 +7276,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1169921176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169921171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!1 &1207017660
 GameObject:
   m_ObjectHideFlags: 0
@@ -7414,7 +7320,6 @@ GameObject:
   - component: {fileID: 1228170243}
   - component: {fileID: 1228170242}
   - component: {fileID: 1228170241}
-  - component: {fileID: 1228170240}
   m_Layer: 0
   m_Name: Spike (16)
   m_TagString: Puzzle
@@ -7436,19 +7341,6 @@ Transform:
   m_Father: {fileID: 90479440}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1228170240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1228170238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!95 &1228170241
 Animator:
   serializedVersion: 3
@@ -8798,7 +8690,6 @@ GameObject:
   - component: {fileID: 1394917885}
   - component: {fileID: 1394917884}
   - component: {fileID: 1394917883}
-  - component: {fileID: 1394917882}
   m_Layer: 0
   m_Name: Spike (17)
   m_TagString: Puzzle
@@ -8820,19 +8711,6 @@ Transform:
   m_Father: {fileID: 90479440}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1394917882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1394917880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!95 &1394917883
 Animator:
   serializedVersion: 3
@@ -8940,7 +8818,6 @@ GameObject:
   - component: {fileID: 1400325231}
   - component: {fileID: 1400325230}
   - component: {fileID: 1400325232}
-  - component: {fileID: 1400325233}
   m_Layer: 0
   m_Name: Spike (3)
   m_TagString: Puzzle
@@ -8957,7 +8834,7 @@ Transform:
   m_GameObject: {fileID: 1400325228}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.6, y: -2.56, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6308562, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.6308562, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 3
@@ -9057,19 +8934,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1400325233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1400325228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!1 &1410411265
 GameObject:
   m_ObjectHideFlags: 0
@@ -9260,8 +9124,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: +
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6e38f88d31242394ea25c111a146583c, type: 2}
+  m_sharedMaterial: {fileID: 7402727535822430951, guid: 6e38f88d31242394ea25c111a146583c,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10016,7 +9881,6 @@ GameObject:
   - component: {fileID: 1615595800}
   - component: {fileID: 1615595799}
   - component: {fileID: 1615595798}
-  - component: {fileID: 1615595797}
   m_Layer: 0
   m_Name: Spike (21)
   m_TagString: Puzzle
@@ -10033,24 +9897,11 @@ Transform:
   m_GameObject: {fileID: 1615595795}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.39, y: -1.0939999, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6308562, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.6308562, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1615595797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1615595795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!95 &1615595798
 Animator:
   serializedVersion: 3
@@ -10625,7 +10476,6 @@ GameObject:
   - component: {fileID: 1649615153}
   - component: {fileID: 1649615152}
   - component: {fileID: 1649615151}
-  - component: {fileID: 1649615150}
   m_Layer: 0
   m_Name: Spike (14)
   m_TagString: Puzzle
@@ -10647,19 +10497,6 @@ Transform:
   m_Father: {fileID: 90479440}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1649615150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1649615148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!95 &1649615151
 Animator:
   serializedVersion: 3
@@ -10983,7 +10820,6 @@ GameObject:
   - component: {fileID: 1684546901}
   - component: {fileID: 1684546900}
   - component: {fileID: 1684546899}
-  - component: {fileID: 1684546898}
   m_Layer: 0
   m_Name: Spike (20)
   m_TagString: Puzzle
@@ -11000,24 +10836,11 @@ Transform:
   m_GameObject: {fileID: 1684546896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.371, y: 0.28100008, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6308562, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.6308562, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1684546898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1684546896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!95 &1684546899
 Animator:
   serializedVersion: 3
@@ -11338,8 +11161,9 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6e38f88d31242394ea25c111a146583c, type: 2}
+  m_sharedMaterial: {fileID: 7402727535822430951, guid: 6e38f88d31242394ea25c111a146583c,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11417,7 +11241,6 @@ GameObject:
   - component: {fileID: 1712314494}
   - component: {fileID: 1712314493}
   - component: {fileID: 1712314492}
-  - component: {fileID: 1712314491}
   m_Layer: 0
   m_Name: Spike (13)
   m_TagString: Puzzle
@@ -11434,24 +11257,11 @@ Transform:
   m_GameObject: {fileID: 1712314489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.13, y: -3.91, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6308562, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.6308562, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1712314491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1712314489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!95 &1712314492
 Animator:
   serializedVersion: 3
@@ -11723,7 +11533,6 @@ GameObject:
   - component: {fileID: 1768603721}
   - component: {fileID: 1768603720}
   - component: {fileID: 1768603722}
-  - component: {fileID: 1768603723}
   m_Layer: 0
   m_Name: Spike
   m_TagString: Puzzle
@@ -11740,7 +11549,7 @@ Transform:
   m_GameObject: {fileID: 1768603718}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.58, y: 1.71, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.63085616, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.63085616, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 0
@@ -11840,19 +11649,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1768603723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1768603718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!1 &1774033970
 GameObject:
   m_ObjectHideFlags: 0
@@ -11865,7 +11661,6 @@ GameObject:
   - component: {fileID: 1774033975}
   - component: {fileID: 1774033974}
   - component: {fileID: 1774033973}
-  - component: {fileID: 1774033972}
   m_Layer: 0
   m_Name: Spike (22)
   m_TagString: Puzzle
@@ -11882,24 +11677,11 @@ Transform:
   m_GameObject: {fileID: 1774033970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.376, y: -2.554, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6308562, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.6308562, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1774033972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1774033970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!95 &1774033973
 Animator:
   serializedVersion: 3
@@ -12549,7 +12331,6 @@ GameObject:
   - component: {fileID: 1887381490}
   - component: {fileID: 1887381489}
   - component: {fileID: 1887381491}
-  - component: {fileID: 1887381492}
   m_Layer: 0
   m_Name: Spike (4)
   m_TagString: Puzzle
@@ -12566,7 +12347,7 @@ Transform:
   m_GameObject: {fileID: 1887381487}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.59, y: -3.94, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6308562, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.6308562, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 4
@@ -12666,19 +12447,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1887381492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1887381487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!1 &1906394549
 GameObject:
   m_ObjectHideFlags: 0
@@ -12894,7 +12662,6 @@ GameObject:
   - component: {fileID: 1966941342}
   - component: {fileID: 1966941341}
   - component: {fileID: 1966941343}
-  - component: {fileID: 1966941344}
   m_Layer: 0
   m_Name: Spike (8)
   m_TagString: Puzzle
@@ -12911,7 +12678,7 @@ Transform:
   m_GameObject: {fileID: 1966941339}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.34, y: -2.56, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6308562, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.6308562, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 8
@@ -13011,19 +12778,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1966941344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1966941339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!1 &1973349222
 GameObject:
   m_ObjectHideFlags: 0
@@ -13246,8 +13000,9 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6e38f88d31242394ea25c111a146583c, type: 2}
+  m_sharedMaterial: {fileID: 7402727535822430951, guid: 6e38f88d31242394ea25c111a146583c,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13403,7 +13158,6 @@ GameObject:
   - component: {fileID: 2005939718}
   - component: {fileID: 2005939717}
   - component: {fileID: 2005939716}
-  - component: {fileID: 2005939715}
   m_Layer: 0
   m_Name: Spike (18)
   m_TagString: Puzzle
@@ -13420,24 +13174,11 @@ Transform:
   m_GameObject: {fileID: 2005939713}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.164, y: -3.95, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6308562, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.6308562, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2005939715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2005939713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!95 &2005939716
 Animator:
   serializedVersion: 3
@@ -13669,7 +13410,6 @@ GameObject:
   - component: {fileID: 2021201497}
   - component: {fileID: 2021201496}
   - component: {fileID: 2021201498}
-  - component: {fileID: 2021201499}
   m_Layer: 0
   m_Name: Spike (10)
   m_TagString: Puzzle
@@ -13786,19 +13526,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2021201499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2021201494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!1 &2058173760
 GameObject:
   m_ObjectHideFlags: 0
@@ -13811,7 +13538,6 @@ GameObject:
   - component: {fileID: 2058173763}
   - component: {fileID: 2058173762}
   - component: {fileID: 2058173764}
-  - component: {fileID: 2058173765}
   m_Layer: 0
   m_Name: Spike (2)
   m_TagString: Puzzle
@@ -13828,7 +13554,7 @@ Transform:
   m_GameObject: {fileID: 2058173760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.59, y: -1.1, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6308562, z: 0.6}
+  m_LocalScale: {x: 0.72, y: 0.6308562, z: 0.6}
   m_Children: []
   m_Father: {fileID: 90479440}
   m_RootOrder: 2
@@ -13928,19 +13654,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2058173765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2058173760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab0592e2a979b245998ab6cab9a2869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1628853764}
 --- !u!1 &2065282781
 GameObject:
   m_ObjectHideFlags: 0

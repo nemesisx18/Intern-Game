@@ -15,6 +15,9 @@ public class RandomNumber : MonoBehaviour
     public Button_0 button;
     public GameTimer gmTimer;
 
+    public AudioSource audio;
+    public AudioClip clip;
+
     double angka1, angka2, angka3 ,aritmatika;
 
     public double hasil, inputJawaban;
@@ -26,6 +29,7 @@ public class RandomNumber : MonoBehaviour
     private void Start()
     {
         RandomNumberAll();
+        audio.clip = clip;
     }
 
     private void Update()
@@ -48,6 +52,7 @@ public class RandomNumber : MonoBehaviour
             gmTimer.jawabanInput = null;
             gmTimer.timeRemaining += 5f;
             gmTimer.AddScore();
+            audio.Play();
         }
     }
 
