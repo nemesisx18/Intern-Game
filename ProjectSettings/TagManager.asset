@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Puzzle
   - Nomor
+  - Back
   layers:
   - Default
   - TransparentFX
