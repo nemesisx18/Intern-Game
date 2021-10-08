@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+    public GameObject UI_Tutorial;
+
     public void PlayGame()
     {
         SceneManager.LoadScene("LevelSelection");
@@ -14,10 +16,23 @@ public class MenuManager : MonoBehaviour
     {
         //do something
         Debug.Log("open setting");
+
     }
 
     public void ExitApp()
     {
         Application.Quit();
     }
+
+    public void TutorialOpen()
+    {
+       UI_Tutorial.SetActive(true);
+            
+    }
+
+    public void TutorialClose()
+    {
+        UI_Tutorial.SetActive(false);
+    }
+
 }

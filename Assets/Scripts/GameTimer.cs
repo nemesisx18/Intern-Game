@@ -22,6 +22,8 @@ public class GameTimer : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI HighscoreText;
 
+    public GameObject UI_PauseMenu;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +44,12 @@ public class GameTimer : MonoBehaviour
         RunTimer();
         scoreText.text = score.ToString();
         HighscoreText.text = PlayerPrefs.GetFloat("HighScore").ToString();
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Time.timeScale = 0;
+            UI_PauseMenu.SetActive(true);
+        }
     }
 
     public void AddScore()
@@ -139,5 +147,21 @@ public class GameTimer : MonoBehaviour
         {
             PlayerPrefs.SetInt("levelAt", nextSceneLoad);
         }
+    }
+
+    public void UnPause()
+    {
+        Time.timeScale = 1;
+        UI_PauseMenu.SetActive(false);
+    }
+
+    public void BackMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(sceneBuildIndex: levelSelect + 1);
     }
 }
