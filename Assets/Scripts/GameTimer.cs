@@ -21,8 +21,12 @@ public class GameTimer : MonoBehaviour
     public TextMeshProUGUI timeText;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI HighscoreText;
+    public TextMeshProUGUI endScoreText;
 
     public GameObject UI_PauseMenu;
+    public GameObject UI_WinCondition;
+    public GameObject UI_Retry;
+    public GameObject UI_NextLvl;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +35,7 @@ public class GameTimer : MonoBehaviour
         timerIsRunning = true;
         scoreText.text = score.ToString();
         //HighscoreText.text = PlayerPrefs.GetFloat("Highscore").ToString();
-        
+        UI_WinCondition.SetActive(false);
         //set bar max value
         countBar.maxValue = timeRemaining;
     }
@@ -69,8 +73,8 @@ public class GameTimer : MonoBehaviour
             else
             {
                 Debug.Log("Time has run out!");
-
-                Time.timeScale = 0;
+                UI_WinCondition.SetActive(true);
+                //Time.timeScale = 0;
                 SetHighScore();
             }
         }
@@ -88,7 +92,7 @@ public class GameTimer : MonoBehaviour
 
     public void SetHighScore()
     {
-
+        endScoreText.text = score.ToString();
         if (levelSelect == 1)
         {
             if (score > PlayerPrefs.GetFloat("HighScore", 0))
@@ -99,6 +103,10 @@ public class GameTimer : MonoBehaviour
             if (score >= 50)
             {
                 NextLevel();
+            }
+            else
+            {
+                UI_NextLvl.SetActive(false);
             }
             
         }
@@ -113,6 +121,10 @@ public class GameTimer : MonoBehaviour
             {
                 NextLevel();
             }
+            else
+            {
+                UI_NextLvl.SetActive(false);
+            }
         }
         else if (levelSelect == 3)
         {
@@ -124,6 +136,10 @@ public class GameTimer : MonoBehaviour
             if (score >= 30)
             {
                 NextLevel();
+            }
+            else
+            {
+                UI_NextLvl.SetActive(false);
             }
         }
         else if (levelSelect == 4)
@@ -137,6 +153,10 @@ public class GameTimer : MonoBehaviour
             {
                 NextLevel();
             }
+            else
+            {
+                UI_NextLvl.SetActive(false);
+            }
         }
 
     }
@@ -146,6 +166,8 @@ public class GameTimer : MonoBehaviour
         if (nextSceneLoad > PlayerPrefs.GetInt("levelAt"))
         {
             PlayerPrefs.SetInt("levelAt", nextSceneLoad);
+            UI_Retry.SetActive(false);
+            
         }
     }
 
