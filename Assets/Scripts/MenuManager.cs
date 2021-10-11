@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
     public GameObject UI_Tutorial;
+    public GameObject settingUI;
 
     public void PlayGame()
     {
@@ -15,8 +16,13 @@ public class MenuManager : MonoBehaviour
     public void Setting()
     {
         //do something
+        settingUI.SetActive(true);
         Debug.Log("open setting");
+    }
 
+    public void CloseSetting()
+    {
+        settingUI.SetActive(false);
     }
 
     public void ExitApp()
