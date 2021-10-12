@@ -19,4 +19,9 @@ public class GetHighScore : MonoBehaviour
         HighScore4.text = PlayerPrefs.GetFloat("HighScore4", 0) + "";
     }
 
+    public void ResetHighScoreAll()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+
 }
