@@ -41,4 +41,8 @@ public class MenuManager : MonoBehaviour
         UI_Tutorial.SetActive(false);
     }
 
+    public void ResetHighScoreAll()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 }
