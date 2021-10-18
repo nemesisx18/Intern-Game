@@ -8,6 +8,11 @@ public class MenuManager : MonoBehaviour
     public GameObject UI_Tutorial;
     public GameObject settingUI;
 
+    public void Start()
+    {
+        
+    }
+
     public void PlayGame()
     {
         SceneManager.LoadScene("LevelSelection");

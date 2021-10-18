@@ -5,7 +5,7 @@ using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
-    public float playerSpeed = 5.0f;
+    public float playerSpeed;
     public bool canPress = false;
 
     private Rigidbody2D _playerRigidbody;
@@ -38,9 +38,9 @@ public class PlayerController : MonoBehaviour
     public IEnumerator Slowed()
     {
         yield return new WaitForSeconds(1.5f);
-        playerSpeed = 2f;
+        playerSpeed = 1.5f;
         yield return new WaitForSeconds(1f);
-        playerSpeed = 7.5f;
+        playerSpeed = 3.25f;
     }
 
     //private bool IsGrounded()
@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
     //    return groundCheck.collider != null && groundCheck.collider.CompareTag("Ground");
     //}
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Puzzle")
         {

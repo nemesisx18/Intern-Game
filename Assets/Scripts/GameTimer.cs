@@ -38,13 +38,14 @@ public class GameTimer : MonoBehaviour
         UI_WinCondition.SetActive(false);
         //set bar max value
         countBar.maxValue = timeRemaining;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        countBar.value += Time.deltaTime;
-
+        countBar.value = timeRemaining;
+        
         RunTimer();
         scoreText.text = score.ToString();
         HighscoreText.text = PlayerPrefs.GetFloat("HighScore").ToString();
