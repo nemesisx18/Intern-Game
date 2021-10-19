@@ -5,7 +5,7 @@ using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
-    public float playerSpeed;
+    public float playerSpeed = 3.25f;
     public bool canPress = false;
 
     private Rigidbody2D _playerRigidbody;

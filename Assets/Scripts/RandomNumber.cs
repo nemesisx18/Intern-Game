@@ -18,6 +18,10 @@ public class RandomNumber : MonoBehaviour
     public AudioSource audio;
     public AudioClip clip;
 
+    public GameObject changeNameButton;
+    public GameObject[] buttonAnswer;
+    
+
     double angka1, angka2, angka3 ,aritmatika;
 
     public double hasil, inputJawaban;
@@ -34,6 +38,7 @@ public class RandomNumber : MonoBehaviour
 
     private void Update()
     {
+        //Checking Answers
         inputJawaban = System.Convert.ToDouble(gmTimer.jawabanInput);
         txt_input.text = inputJawaban.ToString();
         if (inputJawaban != null)
@@ -87,23 +92,34 @@ public class RandomNumber : MonoBehaviour
         {
             aritmatika = 0;
             AritmatikaMethod();
+            RandomButtonAnswer();
         }
         else if (gmTimer.levelSelect == 2)
         {
             aritmatika = Random.Range(0, 2);
             AritmatikaMethod();
+            RandomButtonAnswer();
         }
         else if (gmTimer.levelSelect == 3)
         {
             aritmatika = Random.Range(0, 3);
             AritmatikaMethod();
+            RandomButtonAnswer();
         }
         else if (gmTimer.levelSelect == 4)
         {
             aritmatika = Random.Range(0, 4);
             AritmatikaMethod();
+            RandomButtonAnswer();
         }
         
+    }
+
+    public void RandomButtonAnswer(){
+        int a = Random.Range(0, buttonAnswer.Length);
+
+        changeNameButton = buttonAnswer[a];
+        changeNameButton.name = hasil.ToString();
     }
 
     private void AritmatikaMethod()
@@ -111,8 +127,8 @@ public class RandomNumber : MonoBehaviour
         //ARITMATIKA PENJUMLAHAN (+)
         if (aritmatika == 0)
         {
-            angka1 = Random.Range(0, 51);
-            angka2 = Random.Range(0, 51);
+            angka1 = Random.Range(0, 10);
+            angka2 = Random.Range(0, 10);
             txt_aritmatika.text = " + ";
             hasil = angka1 + angka2;
         }
@@ -120,8 +136,8 @@ public class RandomNumber : MonoBehaviour
         //ARITMATIKA PENGURANGAN (-)
         else if (aritmatika == 1)
         {
-            angka1 = Random.Range(0, 51);
-            angka2 = Random.Range(0, 51);
+            angka1 = Random.Range(0, 10);
+            angka2 = Random.Range(0, 10);
             txt_aritmatika.text = " - ";
             hasil = angka1 - angka2;
         }

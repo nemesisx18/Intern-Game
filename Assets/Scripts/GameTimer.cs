@@ -48,7 +48,7 @@ public class GameTimer : MonoBehaviour
         
         RunTimer();
         scoreText.text = score.ToString();
-        HighscoreText.text = PlayerPrefs.GetFloat("HighScore").ToString();
+        //HighscoreText.text = PlayerPrefs.GetFloat("HighScore").ToString();
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
