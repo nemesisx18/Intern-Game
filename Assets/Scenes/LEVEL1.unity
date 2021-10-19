@@ -2715,6 +2715,9 @@ MonoBehaviour:
   gmTimer: {fileID: 0}
   randomSprite:
   - {fileID: 21300000, guid: 6b3151fd506653844bf033a5ff2ca379, type: 3}
+  fixJawab:
+  - {fileID: 21300000, guid: 192ac527c16971a479c644336c0988d4, type: 3}
+  - {fileID: 21300000, guid: 602742179f92b8346bc68c3351fcede3, type: 3}
   InputString: 
 --- !u!114 &556878413
 MonoBehaviour:
@@ -2789,7 +2792,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6b3151fd506653844bf033a5ff2ca379, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3175,6 +3178,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b718258efeff0904f8febe8b2d651b6d, type: 3}
   - {fileID: 21300000, guid: 800143a0922d5034981d8d4223191a79, type: 3}
   - {fileID: 21300000, guid: 32b74afc1e54c564880675f84a384aa9, type: 3}
+  fixJawab: []
   InputString: 
 --- !u!1 &574086402
 GameObject:
@@ -6820,6 +6824,7 @@ MonoBehaviour:
   gmTimer: {fileID: 1912289619}
   audio: {fileID: 994082084}
   clip: {fileID: 8300000, guid: b220533e08bf7d54996aba919c314459, type: 3}
+  changeNameButton: {fileID: 0}
   buttonAnswer:
   - {fileID: 556878410}
   - {fileID: 1273813080}
@@ -6827,6 +6832,7 @@ MonoBehaviour:
   - {fileID: 572734552}
   - {fileID: 1687062512}
   - {fileID: 1048943391}
+  jawaban: {fileID: 11400000, guid: b3d68d1aea233854fad5342576fe9dd6, type: 2}
   hasil: 0
   inputJawaban: 0
   soal_angka1:
@@ -7203,6 +7209,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 52890e0a98ba77c40948ccafc91387eb, type: 3}
   - {fileID: 21300000, guid: 4184e964f60f82744b39d34f8fe341c3, type: 3}
   - {fileID: 21300000, guid: cfd68280740b4964eb5552af94d04baf, type: 3}
+  fixJawab: []
   InputString: 
 --- !u!1 &1055531590
 GameObject:
@@ -9133,6 +9140,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: eaca494b4c23d0e4aa22966da294733b, type: 3}
   - {fileID: 21300000, guid: b35da3f94a5bf3649bdcb05f4b02949c, type: 3}
   - {fileID: 21300000, guid: 6bbf8e4918ad6c3489b3f76d1594a9c4, type: 3}
+  fixJawab:
+  - {fileID: 21300000, guid: 192ac527c16971a479c644336c0988d4, type: 3}
+  - {fileID: 21300000, guid: 602742179f92b8346bc68c3351fcede3, type: 3}
   InputString: 
 --- !u!1 &1311929679
 GameObject:
@@ -9347,12 +9357,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: a040b4f3e6714c5458a3759dc4736250, type: 3}
+    m_FontSize: 89
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 91
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -12458,6 +12468,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 17881a5b1bd2aa54aad6589a88860562, type: 3}
   - {fileID: 21300000, guid: d8e1a5ab6241165489fdd6e08e8c7807, type: 3}
   - {fileID: 21300000, guid: aabc1bf2d49c092448f4e44d835d7640, type: 3}
+  fixJawab: []
   InputString: 
 --- !u!1 &1709751531
 GameObject:
@@ -15647,6 +15658,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ffc58c8fd9270254f88e1842677e3b65, type: 3}
   - {fileID: 21300000, guid: accfdd6ef29a8f44aa4af13739678af8, type: 3}
   - {fileID: 21300000, guid: 83f302f0c61450947a4f000a7bc8d25c, type: 3}
+  fixJawab: []
   InputString: 
 --- !u!1 &2107223899
 GameObject:

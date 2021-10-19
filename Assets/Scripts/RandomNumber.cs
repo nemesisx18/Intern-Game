@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class RandomNumber : MonoBehaviour
@@ -20,6 +21,8 @@ public class RandomNumber : MonoBehaviour
 
     public GameObject changeNameButton;
     public GameObject[] buttonAnswer;
+
+    public SpriteMaster jawaban;
     
 
     double angka1, angka2, angka3 ,aritmatika;
@@ -120,6 +123,14 @@ public class RandomNumber : MonoBehaviour
 
         changeNameButton = buttonAnswer[a];
         changeNameButton.name = hasil.ToString();
+
+        for(int i = 0; i < jawaban.spriteHasil.Count; i++)
+        {
+            if (hasil == jawaban.spriteHasil[i].hasil)
+            {
+                changeNameButton.GetComponent<Image>().sprite = jawaban.spriteHasil[i].gambar;
+            }
+        }
     }
 
     private void AritmatikaMethod()

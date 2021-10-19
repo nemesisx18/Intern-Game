@@ -740,6 +740,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b718258efeff0904f8febe8b2d651b6d, type: 3}
   - {fileID: 21300000, guid: 800143a0922d5034981d8d4223191a79, type: 3}
   - {fileID: 21300000, guid: 32b74afc1e54c564880675f84a384aa9, type: 3}
+  fixJawab: []
   InputString: 
 --- !u!114 &100240276
 MonoBehaviour:
@@ -3266,6 +3267,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: eaca494b4c23d0e4aa22966da294733b, type: 3}
   - {fileID: 21300000, guid: b35da3f94a5bf3649bdcb05f4b02949c, type: 3}
   - {fileID: 21300000, guid: 6bbf8e4918ad6c3489b3f76d1594a9c4, type: 3}
+  fixJawab: []
   InputString: 
 --- !u!114 &520417229
 MonoBehaviour:
@@ -5674,6 +5676,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 52890e0a98ba77c40948ccafc91387eb, type: 3}
   - {fileID: 21300000, guid: 4184e964f60f82744b39d34f8fe341c3, type: 3}
   - {fileID: 21300000, guid: cfd68280740b4964eb5552af94d04baf, type: 3}
+  fixJawab: []
   InputString: 
 --- !u!114 &858494076
 MonoBehaviour:
@@ -6485,6 +6488,7 @@ MonoBehaviour:
   - {fileID: 100240273}
   - {fileID: 1161970978}
   - {fileID: 858494073}
+  jawaban: {fileID: 11400000, guid: 893ed06ba41aa3143ab0601c3bb85bdd, type: 2}
   hasil: 0
   inputJawaban: 0
   soal_angka1:
@@ -7463,6 +7467,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 17881a5b1bd2aa54aad6589a88860562, type: 3}
   - {fileID: 21300000, guid: d8e1a5ab6241165489fdd6e08e8c7807, type: 3}
   - {fileID: 21300000, guid: aabc1bf2d49c092448f4e44d835d7640, type: 3}
+  fixJawab: []
   InputString: 
 --- !u!114 &1161970981
 MonoBehaviour:
@@ -12609,6 +12614,7 @@ MonoBehaviour:
   gmTimer: {fileID: 0}
   randomSprite:
   - {fileID: 21300000, guid: 6b3151fd506653844bf033a5ff2ca379, type: 3}
+  fixJawab: []
   InputString: 
 --- !u!114 &1842185140
 MonoBehaviour:
@@ -13233,6 +13239,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ffc58c8fd9270254f88e1842677e3b65, type: 3}
   - {fileID: 21300000, guid: accfdd6ef29a8f44aa4af13739678af8, type: 3}
   - {fileID: 21300000, guid: 83f302f0c61450947a4f000a7bc8d25c, type: 3}
+  fixJawab: []
   InputString: 
 --- !u!114 &1892932964
 MonoBehaviour:

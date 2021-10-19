@@ -11,7 +11,8 @@ public class Button_0 : MonoBehaviour
 
     public GameTimer gmTimer;
 
-    public Sprite[] randomSprite;    
+    public Sprite[] randomSprite;
+    public Sprite[] fixJawab;
 
     public string InputString;
 
@@ -19,6 +20,22 @@ public class Button_0 : MonoBehaviour
     {
         GameObject a = GameObject.Find("_GameManager");
         gmTimer = a.GetComponent<GameTimer>();
+    }
+
+    void Update()
+    {
+        if(this.gameObject.name == "0")
+        {
+            gameObject.GetComponent<Image>().sprite = fixJawab[0];
+        }
+        else if (this.gameObject.name == "1")
+        {
+            gameObject.GetComponent<Image>().sprite = fixJawab[1];
+        }
+        else if (this.gameObject.name == "2")
+        {
+            gameObject.GetComponent<Image>().sprite = fixJawab[2];
+        }
     }
 
     public void ButtonPressed()
