@@ -1183,7 +1183,9 @@ MonoBehaviour:
   inputField: {fileID: 208593420}
   gmTimer: {fileID: 0}
   randomSprite:
-  - {fileID: 21300000, guid: 6b3151fd506653844bf033a5ff2ca379, type: 3}
+  - {fileID: 21300000, guid: 64e37c3be0c7e474cbaecdfc8f637362, type: 3}
+  - {fileID: 21300000, guid: cc3ebbd98c95d744dbcff0504cc830cd, type: 3}
+  fixJawab: []
   InputString: 
 --- !u!114 &131353477
 MonoBehaviour:
@@ -1258,7 +1260,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6b3151fd506653844bf033a5ff2ca379, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d2c69f9b909ade843be9a5818dc33b38, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3169,16 +3171,9 @@ MonoBehaviour:
   inputField: {fileID: 208593420}
   gmTimer: {fileID: 0}
   randomSprite:
-  - {fileID: 21300000, guid: d09599a4498ac2d4c943f59192a809e1, type: 3}
-  - {fileID: 21300000, guid: 4f537e98169dba142b3a64a4b4b5860d, type: 3}
-  - {fileID: 21300000, guid: 1f9ec46585612b946a45e83231058241, type: 3}
-  - {fileID: 21300000, guid: 1fab1dc3b469e43408d0f70d7adb8785, type: 3}
-  - {fileID: 21300000, guid: cc5f6d4ffcb8ae94198d18bfc5430721, type: 3}
-  - {fileID: 21300000, guid: 51aa1f5e4b3a2524d833bb6d4c52c357, type: 3}
-  - {fileID: 21300000, guid: 7964e45df674f8346a4cb606d848dbc5, type: 3}
-  - {fileID: 21300000, guid: 17881a5b1bd2aa54aad6589a88860562, type: 3}
-  - {fileID: 21300000, guid: d8e1a5ab6241165489fdd6e08e8c7807, type: 3}
-  - {fileID: 21300000, guid: aabc1bf2d49c092448f4e44d835d7640, type: 3}
+  - {fileID: 21300000, guid: bbb3cdd1835865846abe2442e4e5bb36, type: 3}
+  - {fileID: 21300000, guid: cc61b1b9ca4024e4ba655db4c050d78f, type: 3}
+  fixJawab: []
   InputString: 
 --- !u!114 &558522569
 MonoBehaviour:
@@ -3253,7 +3248,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d09599a4498ac2d4c943f59192a809e1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2889d614073e1e147ba3a8388919c9c0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6881,7 +6876,7 @@ MonoBehaviour:
   txt_aritmatika: {fileID: 1426122357}
   txt_hasil: {fileID: 1994125228}
   txt_input: {fileID: 219522300}
-  button: {fileID: 0}
+  button: {fileID: 131353476}
   gmTimer: {fileID: 1912289619}
   audio: {fileID: 994082084}
   clip: {fileID: 8300000, guid: b220533e08bf7d54996aba919c314459, type: 3}
@@ -6893,6 +6888,7 @@ MonoBehaviour:
   - {fileID: 1001463971}
   - {fileID: 558522566}
   - {fileID: 1644909598}
+  jawaban: {fileID: 11400000, guid: 8be02bc2f0e65874bb7092f0f93c3fcd, type: 2}
   hasil: 0
   inputJawaban: 0
   soal_angka1:
@@ -7160,16 +7156,9 @@ MonoBehaviour:
   inputField: {fileID: 208593420}
   gmTimer: {fileID: 0}
   randomSprite:
-  - {fileID: 21300000, guid: 088f6592362bab44ebbf33e071d3177d, type: 3}
-  - {fileID: 21300000, guid: c5ebe4f0ca9458743ac792c0e2d44872, type: 3}
-  - {fileID: 21300000, guid: 8282804817e5410429118136842611a3, type: 3}
-  - {fileID: 21300000, guid: b37d308f3d40a4841a3922872765a86d, type: 3}
-  - {fileID: 21300000, guid: 0295fb39ea3ad6b4885f587aec495bad, type: 3}
-  - {fileID: 21300000, guid: 2686988faead9c642a539de89ea4bedc, type: 3}
-  - {fileID: 21300000, guid: a6f27d3e83ebcca408ccb27dbe346cc3, type: 3}
-  - {fileID: 21300000, guid: b718258efeff0904f8febe8b2d651b6d, type: 3}
-  - {fileID: 21300000, guid: 800143a0922d5034981d8d4223191a79, type: 3}
-  - {fileID: 21300000, guid: 32b74afc1e54c564880675f84a384aa9, type: 3}
+  - {fileID: 21300000, guid: 62e2eaa0e8c1d984a836f47a6497a4c6, type: 3}
+  - {fileID: 21300000, guid: 0b006320835cfd84388e69b161ebd5cd, type: 3}
+  fixJawab: []
   InputString: 
 --- !u!114 &1001463974
 MonoBehaviour:
@@ -7244,7 +7233,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 088f6592362bab44ebbf33e071d3177d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 91f6e59bcd9389b459caa7a00bec925a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9439,16 +9428,9 @@ MonoBehaviour:
   inputField: {fileID: 208593420}
   gmTimer: {fileID: 0}
   randomSprite:
-  - {fileID: 21300000, guid: b8e77026321e586419f4f669f763a9a0, type: 3}
-  - {fileID: 21300000, guid: b8271f10b82b69b4aa5ecabd4ea4501e, type: 3}
-  - {fileID: 21300000, guid: c8270e897333c944ab81c30601e4ea70, type: 3}
-  - {fileID: 21300000, guid: a3f5b53262d0ccb41afa1504e84f63b9, type: 3}
-  - {fileID: 21300000, guid: 99bf65f53f00c1d499830891f713eeab, type: 3}
-  - {fileID: 21300000, guid: e4e762c15ceae2547a69f9061c183708, type: 3}
-  - {fileID: 21300000, guid: ac24d88c0ef5581459715de47c728c36, type: 3}
-  - {fileID: 21300000, guid: ffc58c8fd9270254f88e1842677e3b65, type: 3}
-  - {fileID: 21300000, guid: accfdd6ef29a8f44aa4af13739678af8, type: 3}
-  - {fileID: 21300000, guid: 83f302f0c61450947a4f000a7bc8d25c, type: 3}
+  - {fileID: 21300000, guid: f9db8ef5e8e1486478c91b1b3b7de39a, type: 3}
+  - {fileID: 21300000, guid: cb9aa59c903f7c744b07deb7d9330134, type: 3}
+  fixJawab: []
   InputString: 
 --- !u!114 &1392516791
 MonoBehaviour:
@@ -9523,7 +9505,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b8e77026321e586419f4f669f763a9a0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bfcef22fc641d654d879a7617f395c2f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10162,16 +10144,9 @@ MonoBehaviour:
   inputField: {fileID: 208593420}
   gmTimer: {fileID: 0}
   randomSprite:
-  - {fileID: 21300000, guid: 8422dd3b40109384bad0cd99ee93fda4, type: 3}
-  - {fileID: 21300000, guid: cea04c2eea8c8a345bfc043aaedd3682, type: 3}
-  - {fileID: 21300000, guid: fdb95327a0075f646bf9fdc08f41c28b, type: 3}
-  - {fileID: 21300000, guid: 4b05748f606b6af4f8dc537ce665c99f, type: 3}
-  - {fileID: 21300000, guid: 5c40cf48b481a824a9679d8decf037a3, type: 3}
-  - {fileID: 21300000, guid: c458d2935bc6e884abfff7a201c77324, type: 3}
-  - {fileID: 21300000, guid: 6db755f63f3b5744cbb06ab5fa2c24b6, type: 3}
-  - {fileID: 21300000, guid: eaca494b4c23d0e4aa22966da294733b, type: 3}
-  - {fileID: 21300000, guid: b35da3f94a5bf3649bdcb05f4b02949c, type: 3}
-  - {fileID: 21300000, guid: 6bbf8e4918ad6c3489b3f76d1594a9c4, type: 3}
+  - {fileID: 21300000, guid: 8a0e97e9a6b42ce4c90befc40e607d8a, type: 3}
+  - {fileID: 21300000, guid: d5de8de317db3b34c9ce734bac4be96d, type: 3}
+  fixJawab: []
   InputString: 
 --- !u!114 &1494400376
 MonoBehaviour:
@@ -10246,7 +10221,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8422dd3b40109384bad0cd99ee93fda4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fca3b1e3e1546304f9c478668908defb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11569,16 +11544,9 @@ MonoBehaviour:
   inputField: {fileID: 208593420}
   gmTimer: {fileID: 0}
   randomSprite:
-  - {fileID: 21300000, guid: 799e2ec8efda3ce41843c73ce0f888f7, type: 3}
-  - {fileID: 21300000, guid: 1c1fcc48a57123d4fa2c93c5689ffc52, type: 3}
-  - {fileID: 21300000, guid: 96c4f3acd285c1541b5ee151e57dccf1, type: 3}
-  - {fileID: 21300000, guid: 8e92af4e11adee04fbd0b688d8b3289c, type: 3}
-  - {fileID: 21300000, guid: 0a9beee37fede064ab1f1125d7132d3d, type: 3}
-  - {fileID: 21300000, guid: 0675cb968baf31148b07f5931ef1262b, type: 3}
-  - {fileID: 21300000, guid: fa4f1214bc97f634a874042618dd61ef, type: 3}
-  - {fileID: 21300000, guid: 52890e0a98ba77c40948ccafc91387eb, type: 3}
-  - {fileID: 21300000, guid: 4184e964f60f82744b39d34f8fe341c3, type: 3}
-  - {fileID: 21300000, guid: cfd68280740b4964eb5552af94d04baf, type: 3}
+  - {fileID: 21300000, guid: 084e0086d5b05864e83610f6080bdfbe, type: 3}
+  - {fileID: 21300000, guid: 0b006320835cfd84388e69b161ebd5cd, type: 3}
+  fixJawab: []
   InputString: 
 --- !u!114 &1644909601
 MonoBehaviour:
@@ -11653,7 +11621,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 799e2ec8efda3ce41843c73ce0f888f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d774d46a5dde0144da67b829195bda28, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

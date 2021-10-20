@@ -6,6 +6,7 @@ using TMPro;
 
 public class RandomNumber : MonoBehaviour
 {
+
     public TextMeshProUGUI txt_angka1;
     public TextMeshProUGUI txt_angka2;
     public TextMeshProUGUI txt_angka3;
@@ -36,6 +37,7 @@ public class RandomNumber : MonoBehaviour
     private void Start()
     {
         RandomNumberAll();
+        //RandomAnswer();
         audio.clip = clip;
     }
 
@@ -61,7 +63,17 @@ public class RandomNumber : MonoBehaviour
             gmTimer.timeRemaining += 5f;
             gmTimer.AddScore();
             audio.Play();
+
         }
+        else if (inputJawaban != hasil)
+        {
+            
+            gmTimer.jawabanInput = null;
+            gmTimer.timeRemaining += 0f;
+            //gmTimer.AddScore();
+
+        }
+
     }
 
     public void resetJawaban()
@@ -118,13 +130,19 @@ public class RandomNumber : MonoBehaviour
         
     }
 
-    public void RandomButtonAnswer(){
+    public void RandomButtonAnswer()
+    {
+        
         int a = Random.Range(0, buttonAnswer.Length);
 
         changeNameButton = buttonAnswer[a];
         changeNameButton.name = hasil.ToString();
+        ChangeSprites();
+    }
 
-        for(int i = 0; i < jawaban.spriteHasil.Count; i++)
+    private void ChangeSprites()
+    {
+        for (int i = 0; i < jawaban.spriteHasil.Count; i++)
         {
             if (hasil == jawaban.spriteHasil[i].hasil)
             {
@@ -132,6 +150,18 @@ public class RandomNumber : MonoBehaviour
             }
         }
     }
+
+    /*public void RandomAnswer(){
+        
+        for (int i = 0; i < (buttonAnswer.Length - 1); i++)
+        {
+            int a = Random.Range(-9, 19);
+            changeNameButton = buttonAnswer[i];
+            changeNameButton.name = a.ToString();
+            ChangeSprites();
+            
+        } return;
+    }*/
 
     private void AritmatikaMethod()
     {
@@ -156,8 +186,8 @@ public class RandomNumber : MonoBehaviour
         //ARITMATIKA PERKALIAN (*)
         else if (aritmatika == 2)
         {
-            angka1 = Random.Range(0, 11);
-            angka2 = Random.Range(0, 11);
+            angka1 = Random.Range(0, 10);
+            angka2 = Random.Range(0, 10);
             txt_aritmatika.text = " X ";
             hasil = angka1 * angka2;
         }

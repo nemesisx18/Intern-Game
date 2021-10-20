@@ -730,16 +730,8 @@ MonoBehaviour:
   inputField: {fileID: 208593420}
   gmTimer: {fileID: 0}
   randomSprite:
-  - {fileID: 21300000, guid: 088f6592362bab44ebbf33e071d3177d, type: 3}
-  - {fileID: 21300000, guid: c5ebe4f0ca9458743ac792c0e2d44872, type: 3}
-  - {fileID: 21300000, guid: 8282804817e5410429118136842611a3, type: 3}
-  - {fileID: 21300000, guid: b37d308f3d40a4841a3922872765a86d, type: 3}
-  - {fileID: 21300000, guid: 0295fb39ea3ad6b4885f587aec495bad, type: 3}
-  - {fileID: 21300000, guid: 2686988faead9c642a539de89ea4bedc, type: 3}
-  - {fileID: 21300000, guid: a6f27d3e83ebcca408ccb27dbe346cc3, type: 3}
-  - {fileID: 21300000, guid: b718258efeff0904f8febe8b2d651b6d, type: 3}
-  - {fileID: 21300000, guid: 800143a0922d5034981d8d4223191a79, type: 3}
-  - {fileID: 21300000, guid: 32b74afc1e54c564880675f84a384aa9, type: 3}
+  - {fileID: 21300000, guid: aa0082139c2f0da4e84b8092acb43ddd, type: 3}
+  - {fileID: 21300000, guid: d0c4e8241d575dc4d81191565fe63d9c, type: 3}
   fixJawab: []
   InputString: 
 --- !u!114 &100240276
@@ -815,7 +807,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 088f6592362bab44ebbf33e071d3177d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aa0082139c2f0da4e84b8092acb43ddd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3257,16 +3249,9 @@ MonoBehaviour:
   inputField: {fileID: 208593420}
   gmTimer: {fileID: 0}
   randomSprite:
-  - {fileID: 21300000, guid: 8422dd3b40109384bad0cd99ee93fda4, type: 3}
-  - {fileID: 21300000, guid: cea04c2eea8c8a345bfc043aaedd3682, type: 3}
-  - {fileID: 21300000, guid: fdb95327a0075f646bf9fdc08f41c28b, type: 3}
-  - {fileID: 21300000, guid: 4b05748f606b6af4f8dc537ce665c99f, type: 3}
-  - {fileID: 21300000, guid: 5c40cf48b481a824a9679d8decf037a3, type: 3}
-  - {fileID: 21300000, guid: c458d2935bc6e884abfff7a201c77324, type: 3}
-  - {fileID: 21300000, guid: 6db755f63f3b5744cbb06ab5fa2c24b6, type: 3}
-  - {fileID: 21300000, guid: eaca494b4c23d0e4aa22966da294733b, type: 3}
-  - {fileID: 21300000, guid: b35da3f94a5bf3649bdcb05f4b02949c, type: 3}
-  - {fileID: 21300000, guid: 6bbf8e4918ad6c3489b3f76d1594a9c4, type: 3}
+  - {fileID: 21300000, guid: 2d6ee40f49cfe844aa8a3242a5527a25, type: 3}
+  - {fileID: 21300000, guid: c8d60f39a41c60b4ca9ad3c8139fde02, type: 3}
+  - {fileID: 21300000, guid: 6c80cbbc37c031b49909a16dad5d7fa5, type: 3}
   fixJawab: []
   InputString: 
 --- !u!114 &520417229
@@ -3342,7 +3327,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8422dd3b40109384bad0cd99ee93fda4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 602742179f92b8346bc68c3351fcede3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5666,16 +5651,8 @@ MonoBehaviour:
   inputField: {fileID: 208593420}
   gmTimer: {fileID: 0}
   randomSprite:
-  - {fileID: 21300000, guid: 799e2ec8efda3ce41843c73ce0f888f7, type: 3}
-  - {fileID: 21300000, guid: 1c1fcc48a57123d4fa2c93c5689ffc52, type: 3}
-  - {fileID: 21300000, guid: 96c4f3acd285c1541b5ee151e57dccf1, type: 3}
-  - {fileID: 21300000, guid: 8e92af4e11adee04fbd0b688d8b3289c, type: 3}
-  - {fileID: 21300000, guid: 0a9beee37fede064ab1f1125d7132d3d, type: 3}
-  - {fileID: 21300000, guid: 0675cb968baf31148b07f5931ef1262b, type: 3}
-  - {fileID: 21300000, guid: fa4f1214bc97f634a874042618dd61ef, type: 3}
-  - {fileID: 21300000, guid: 52890e0a98ba77c40948ccafc91387eb, type: 3}
-  - {fileID: 21300000, guid: 4184e964f60f82744b39d34f8fe341c3, type: 3}
-  - {fileID: 21300000, guid: cfd68280740b4964eb5552af94d04baf, type: 3}
+  - {fileID: 21300000, guid: 6c80cbbc37c031b49909a16dad5d7fa5, type: 3}
+  - {fileID: 21300000, guid: 6c80cbbc37c031b49909a16dad5d7fa5, type: 3}
   fixJawab: []
   InputString: 
 --- !u!114 &858494076
@@ -5697,7 +5674,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 799e2ec8efda3ce41843c73ce0f888f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c0fc4030498a1e24eb9cc10237ce24ad, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6476,7 +6453,7 @@ MonoBehaviour:
   txt_aritmatika: {fileID: 1426122357}
   txt_hasil: {fileID: 1994125228}
   txt_input: {fileID: 219522300}
-  button: {fileID: 0}
+  button: {fileID: 1842185139}
   gmTimer: {fileID: 1912289619}
   audio: {fileID: 994082084}
   clip: {fileID: 8300000, guid: b220533e08bf7d54996aba919c314459, type: 3}
@@ -7457,16 +7434,8 @@ MonoBehaviour:
   inputField: {fileID: 208593420}
   gmTimer: {fileID: 0}
   randomSprite:
-  - {fileID: 21300000, guid: d09599a4498ac2d4c943f59192a809e1, type: 3}
-  - {fileID: 21300000, guid: 4f537e98169dba142b3a64a4b4b5860d, type: 3}
-  - {fileID: 21300000, guid: 1f9ec46585612b946a45e83231058241, type: 3}
-  - {fileID: 21300000, guid: 1fab1dc3b469e43408d0f70d7adb8785, type: 3}
-  - {fileID: 21300000, guid: cc5f6d4ffcb8ae94198d18bfc5430721, type: 3}
-  - {fileID: 21300000, guid: 51aa1f5e4b3a2524d833bb6d4c52c357, type: 3}
-  - {fileID: 21300000, guid: 7964e45df674f8346a4cb606d848dbc5, type: 3}
-  - {fileID: 21300000, guid: 17881a5b1bd2aa54aad6589a88860562, type: 3}
-  - {fileID: 21300000, guid: d8e1a5ab6241165489fdd6e08e8c7807, type: 3}
-  - {fileID: 21300000, guid: aabc1bf2d49c092448f4e44d835d7640, type: 3}
+  - {fileID: 21300000, guid: 2d6ee40f49cfe844aa8a3242a5527a25, type: 3}
+  - {fileID: 21300000, guid: cd8583dd6d7d95d47ab775c92dd78096, type: 3}
   fixJawab: []
   InputString: 
 --- !u!114 &1161970981
@@ -7542,7 +7511,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d09599a4498ac2d4c943f59192a809e1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6a2dadc10b20509418bc00bac111c4a9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12613,7 +12582,9 @@ MonoBehaviour:
   inputField: {fileID: 208593420}
   gmTimer: {fileID: 0}
   randomSprite:
-  - {fileID: 21300000, guid: 6b3151fd506653844bf033a5ff2ca379, type: 3}
+  - {fileID: 21300000, guid: aff537a7fd1492d4ca6b79c1bd716cff, type: 3}
+  - {fileID: 21300000, guid: 5bd28e440e6bc834380b0594e8f70e00, type: 3}
+  - {fileID: 21300000, guid: 64f99465c87173d4ca2066e4f648106d, type: 3}
   fixJawab: []
   InputString: 
 --- !u!114 &1842185140
@@ -12689,7 +12660,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6b3151fd506653844bf033a5ff2ca379, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 192ac527c16971a479c644336c0988d4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13229,16 +13200,8 @@ MonoBehaviour:
   inputField: {fileID: 208593420}
   gmTimer: {fileID: 0}
   randomSprite:
-  - {fileID: 21300000, guid: b8e77026321e586419f4f669f763a9a0, type: 3}
-  - {fileID: 21300000, guid: b8271f10b82b69b4aa5ecabd4ea4501e, type: 3}
-  - {fileID: 21300000, guid: c8270e897333c944ab81c30601e4ea70, type: 3}
-  - {fileID: 21300000, guid: a3f5b53262d0ccb41afa1504e84f63b9, type: 3}
-  - {fileID: 21300000, guid: 99bf65f53f00c1d499830891f713eeab, type: 3}
-  - {fileID: 21300000, guid: e4e762c15ceae2547a69f9061c183708, type: 3}
-  - {fileID: 21300000, guid: ac24d88c0ef5581459715de47c728c36, type: 3}
-  - {fileID: 21300000, guid: ffc58c8fd9270254f88e1842677e3b65, type: 3}
-  - {fileID: 21300000, guid: accfdd6ef29a8f44aa4af13739678af8, type: 3}
-  - {fileID: 21300000, guid: 83f302f0c61450947a4f000a7bc8d25c, type: 3}
+  - {fileID: 21300000, guid: d0c4e8241d575dc4d81191565fe63d9c, type: 3}
+  - {fileID: 21300000, guid: c0fc4030498a1e24eb9cc10237ce24ad, type: 3}
   fixJawab: []
   InputString: 
 --- !u!114 &1892932964
@@ -13314,7 +13277,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b8e77026321e586419f4f669f763a9a0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 13fea965dd84cbc45ab8e385e2e4c0f9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
