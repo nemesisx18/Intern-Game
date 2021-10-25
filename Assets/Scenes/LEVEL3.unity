@@ -6876,6 +6876,7 @@ MonoBehaviour:
   txt_aritmatika: {fileID: 1426122357}
   txt_hasil: {fileID: 1994125228}
   txt_input: {fileID: 219522300}
+  txt_jawaban: {fileID: 208593420}
   button: {fileID: 131353476}
   gmTimer: {fileID: 1912289619}
   audio: {fileID: 994082084}

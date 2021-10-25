@@ -13,6 +13,7 @@ public class RandomNumber : MonoBehaviour
     public TextMeshProUGUI txt_aritmatika;
     public TextMeshProUGUI txt_hasil;
     public TMP_InputField txt_input;
+    public Text txt_jawaban;
 
     public Button_0 button;
     public GameTimer gmTimer;
@@ -59,7 +60,8 @@ public class RandomNumber : MonoBehaviour
         {
             RandomNumberAll();
 
-            gmTimer.jawabanInput = null;
+            gmTimer.jawabanInput = "";
+            StartCoroutine(jawabHilang());
             gmTimer.timeRemaining += 5f;
             gmTimer.AddScore();
             audio.Play();
@@ -67,13 +69,19 @@ public class RandomNumber : MonoBehaviour
         }
         else if (inputJawaban != hasil)
         {
-            
-            gmTimer.jawabanInput = null;
+            StartCoroutine(jawabHilang());
+            gmTimer.jawabanInput = "";
             gmTimer.timeRemaining += 0f;
             //gmTimer.AddScore();
 
         }
 
+    }
+
+    IEnumerator jawabHilang()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+        txt_jawaban.text = "JAWABAN";
     }
 
     public void resetJawaban()
