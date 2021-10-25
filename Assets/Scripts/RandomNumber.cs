@@ -58,10 +58,8 @@ public class RandomNumber : MonoBehaviour
     {
         if (inputJawaban == hasil)
         {
-            RandomNumberAll();
-
             gmTimer.jawabanInput = "";
-            StartCoroutine(jawabHilang());
+            StartCoroutine(jawabBenar());
             gmTimer.timeRemaining += 5f;
             gmTimer.AddScore();
             audio.Play();
@@ -69,7 +67,7 @@ public class RandomNumber : MonoBehaviour
         }
         else if (inputJawaban != hasil)
         {
-            StartCoroutine(jawabHilang());
+            StartCoroutine(jawabSalah());
             gmTimer.jawabanInput = "";
             gmTimer.timeRemaining += 0f;
             //gmTimer.AddScore();
@@ -78,7 +76,14 @@ public class RandomNumber : MonoBehaviour
 
     }
 
-    IEnumerator jawabHilang()
+    IEnumerator jawabBenar()
+    {
+        yield return new WaitForSecondsRealtime(2f);
+        txt_jawaban.text = "JAWABAN"; 
+        RandomNumberAll();
+    }
+
+    IEnumerator jawabSalah()
     {
         yield return new WaitForSecondsRealtime(1f);
         txt_jawaban.text = "JAWABAN";

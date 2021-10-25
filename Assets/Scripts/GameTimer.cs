@@ -186,5 +186,6 @@ public class GameTimer : MonoBehaviour
     public void RestartScene()
     {
         SceneManager.LoadScene(sceneBuildIndex: levelSelect + 1);
+        Time.timeScale = 1;
     }
 }
