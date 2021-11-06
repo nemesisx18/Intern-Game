@@ -19,7 +19,9 @@ public class RandomNumber : MonoBehaviour
     public GameTimer gmTimer;
 
     public AudioSource audio;
+    private AudioSource audioSalah;
     public AudioClip clip;
+    public AudioClip clipSalah;
 
     public GameObject changeNameButton;
     public GameObject[] buttonAnswer;
@@ -40,6 +42,9 @@ public class RandomNumber : MonoBehaviour
         RandomNumberAll();
         //RandomAnswer();
         audio.clip = clip;
+
+        audioSalah = gameObject.AddComponent<AudioSource>();
+        audioSalah.clip = clipSalah;
     }
 
     private void Update()
@@ -70,6 +75,7 @@ public class RandomNumber : MonoBehaviour
             StartCoroutine(jawabSalah());
             gmTimer.jawabanInput = "";
             gmTimer.timeRemaining += 0f;
+            audioSalah.Play();
             //gmTimer.AddScore();
 
         }
@@ -85,6 +91,7 @@ public class RandomNumber : MonoBehaviour
 
     IEnumerator jawabSalah()
     {
+        audioSalah.Play();
         yield return new WaitForSecondsRealtime(1f);
         txt_jawaban.text = "JAWABAN";
     }

@@ -47,7 +47,7 @@ public class Button_0 : MonoBehaviour
 
         inputField.text = gmTimer.jawabanInput;
 
-        gameObject.GetComponent<Image>().sprite = randomSprite[Random.Range(0, randomSprite.Length)];
+        //gameObject.GetComponent<Image>().sprite = randomSprite[Random.Range(0, randomSprite.Length)];
     }
 
     public void resetTextJawaban()

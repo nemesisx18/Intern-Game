@@ -6881,6 +6881,7 @@ MonoBehaviour:
   gmTimer: {fileID: 1912289619}
   audio: {fileID: 994082084}
   clip: {fileID: 8300000, guid: b220533e08bf7d54996aba919c314459, type: 3}
+  clipSalah: {fileID: 8300000, guid: 5e15b39b7fa0818438e93588ea6d8c43, type: 3}
   changeNameButton: {fileID: 0}
   buttonAnswer:
   - {fileID: 131353474}
@@ -9071,7 +9072,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -14078,7 +14079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7678fd0e415bcf74c88e6002d2f980dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 60
+  timeRemaining: 600
   score: 0
   levelSelect: 3
   nextSceneLoad: 0
